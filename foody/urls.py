@@ -1,21 +1,25 @@
-"""foody URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
+#django 2.0 way of url
 from django.urls import path
+#django 1.11 way of url
+from django.urls import re_path
+
+#to acess template with views
+from django.views.generic.base import TemplateView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', TemplateView.as_view(template_name="home.html"), name="home"),
+    path('restaurants/', TemplateView.as_view(template_name="temp.html"), name='restaurants'),
+    path('reviews/', TemplateView.as_view(template_name="temp.html"), name='reviews'),
+    path('foods/', TemplateView.as_view(template_name="temp.html"), name='foods'),
+    path('profile/', TemplateView.as_view(template_name="temp.html"), name='profile'),
+    path('logout/', TemplateView.as_view(template_name="temp.html"), name='logout'),
+    path('login/', TemplateView.as_view(template_name="temp.html"), name='login'),
 ]
+
+# #old way 1.11
+# urlpatterns = [
+#     re_path(r'^admin/$', admin.site.urls),
+# ]
