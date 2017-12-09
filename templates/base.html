@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>{% block head_title %}|FOODY{% endblock %}</title>
+{#to add css {% include "snippets/css.html" %}  #}
+
+</head>
+<body>
+    {% include "snippets/nav.html" %}
+
+<div class = "container">
+    {% block content %}
+
+    {% endblock content%}
+</div>
+{# to add js {% include "snippets/js.html" %} #}
+
+
+
+</body>
+</html>
