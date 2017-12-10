@@ -1,12 +1,14 @@
 from django.shortcuts import render
 from django.views.generic import ListView
+from .models import Restaurant
 
 #function based views
 
 def restaurant_list(request):
     template_name = 'restaurants/restaurant_list.html'
+    queryset = Restaurant.objects.all()
     context = {
-        "test": 'list of restaurants to come'
+        "restaurants": queryset,
     }
     return render(request, template_name, context)
 

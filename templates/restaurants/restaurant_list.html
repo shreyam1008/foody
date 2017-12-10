@@ -1,8 +1,10 @@
 {% extends "base.html" %}
-{% block head_title %} TEMP{{ block.super }}{% endblock %}
+{% block head_title %} Restaurant{{ block.super }}{% endblock %}
 
 {% block content %}
 
-    {{ test }}
+    {% for restaurant in restaurants %}
+        <a href="{{ restaurant.slug }}"></a>{{ restaurant }} <br>
+    {% endfor %}
 
 {% endblock %}
