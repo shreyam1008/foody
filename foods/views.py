@@ -1,11 +1,13 @@
 from django.shortcuts import render
 
 
+from .models import Food
 
 def food_list(request):
     template_name = 'foods/food_list.html'
+    query_set = Food.objects.all()
     context = {
-
+        'foods': query_set
     }
     return render(request, template_name, context)
 

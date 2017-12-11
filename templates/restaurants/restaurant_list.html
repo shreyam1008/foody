@@ -5,7 +5,7 @@
     <h2>Restaurant list</h2>
     <ul>
         {% for restaurant in restaurants %}
-            <li><a href="{{ restaurant.slug }}">{{ restaurant }} </a></li>
+            <li><a href="{{ restaurant.slug }}">{{ restaurant }} </a> on {{ restaurant.location }}, {{ restaurant.city }} </li>
         {% endfor %}
     </ul>
     <h5><a href="{% url 'create' %}">Add new</a></h5>

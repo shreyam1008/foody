@@ -1,8 +1,13 @@
 {% extends "base.html" %}
-{% block head_title %} Restaurant{{ block.super }}{% endblock %}
+{% block head_title %} Foods{{ block.super }}{% endblock %}
 
 {% block content %}
     <h2>Food list</h2>
+    <ul>
+        {% for food in foods %}
+            <li><a href="/restaurants/{{ food.restaurant }}/{{ food.name }}/">{{ food }}</a> by {{ food.restaurant }}</li>
+        {% endfor %}
+    </ul>
 
     <h5><a href=" ">Add new</a></h5>
 
