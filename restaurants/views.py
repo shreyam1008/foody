@@ -12,6 +12,14 @@ def restaurant_list(request):
     }
     return render(request, template_name, context)
 
+def restaurant_detail(request, slug):
+    template_name = 'restaurants/restaurant_detail.html'
+    queryset = Restaurant.objects.filter(slug__iexact = slug)[0]
+    context = {
+        "restaurant": queryset,
+    }
+    return render(request, template_name, context)
+
 
 
 

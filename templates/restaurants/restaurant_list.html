@@ -2,9 +2,10 @@
 {% block head_title %} Restaurant{{ block.super }}{% endblock %}
 
 {% block content %}
-
-    {% for restaurant in restaurants %}
-        <a href="{{ restaurant.slug }}"></a>{{ restaurant }} <br>
-    {% endfor %}
+    <ul>
+        {% for restaurant in restaurants %}
+            <li><a href="{{ restaurant.slug }}">{{ restaurant }} </a></li>
+        {% endfor %}
+    </ul>
 
 {% endblock %}
