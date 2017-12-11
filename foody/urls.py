@@ -23,7 +23,7 @@ urlpatterns = [
 
     path('foods/', food_list, name='foods'),
 
-    path('reviews/', TemplateView.as_view(template_name="temp.html"), name='reviews'),
+    path('reviews/',TemplateView.as_view(template_name="temp.html"), name='reviews'),
     path('profile/', TemplateView.as_view(template_name="temp.html"), name='profile'),
     path('logout/', TemplateView.as_view(template_name="temp.html"), name='logout'),
     path('login/', TemplateView.as_view(template_name="temp.html"), name='login'),
