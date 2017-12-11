@@ -9,7 +9,7 @@ from django.views.generic.base import TemplateView
 
 #access templates with help of views
 from restaurants.views import restaurant_list, restaurant_detail, restaurant_create
-from foods.views import foods_list, foods_detail, foods_create
+from foods.views import food_list, food_detail, food_create
 
 
 
