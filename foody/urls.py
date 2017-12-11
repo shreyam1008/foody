@@ -8,18 +8,15 @@ from django.urls import re_path
 from django.views.generic.base import TemplateView
 
 #access templates with help of views
-from restaurants.views import restaurant_list, restaurant_detail
-
-
+from restaurants.views import restaurant_list, restaurant_detail, restaurant_create
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name="home.html"), name="home"),
     path('restaurants/', restaurant_list, name='restaurants'),
-    path('restaurants/<slug>', restaurant_detail, name='restaurants'),
-
-
+    path('restaurants/create', restaurant_create, name='create'),
+    path('restaurants/<slug>', restaurant_detail, name='detail'),
 
     path('reviews/', TemplateView.as_view(template_name="temp.html"), name='reviews'),
     path('foods/', TemplateView.as_view(template_name="temp.html"), name='foods'),

@@ -1,8 +1,29 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views.generic import ListView
 from .models import Restaurant
+from .forms import RestaurantCreateForm
 
 #function based views
+
+def restaurant_create(request):
+    form  = RestaurantCreateForm()
+    errors = None
+
+    if request.method == "POST":
+        form = RestaurantCreateForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect("/restaurants/")
+        if form.errors:
+            errors = form.errors
+
+    template_name = 'restaurants/restaurant_create.html'
+    context = {"form": form, "errors": errors}
+    return render(request, template_name, context)
+
+
 
 def restaurant_list(request):
     template_name = 'restaurants/restaurant_list.html'
@@ -19,6 +40,8 @@ def restaurant_detail(request, slug):
         "restaurant": queryset,
     }
     return render(request, template_name, context)
+
+
 
 
 

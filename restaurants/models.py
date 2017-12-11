@@ -5,16 +5,17 @@ import datetime
 
 
 from .utils import unique_slug_generator
+from .validators import validate_city
 
-User = settings.AUTH_USER_MODEL
+# User = settings.AUTH_USER_MODEL
 
 class Restaurant(models.Model):
-    owner =         models.ForeignKey(User, on_delete=models.CASCADE)
+    # owner =         models.ForeignKey(User, on_delete=models.CASCADE)
     name =          models.CharField(max_length=50)
-    city =          models.CharField(max_length=50, default="Kathmandu", blank=False)
+    city =          models.CharField(max_length=50, default="kathmandu", validators=[validate_city])
     location =      models.CharField(max_length=50, blank=True)
-    open_time =     models.TimeField(default=datetime.time(9, 00))
-    close_time =    models.TimeField(default=datetime.time(18, 00))
+    open_time =     models.TimeField(default=datetime.time(9, 00), blank=True)
+    close_time =    models.TimeField(default=datetime.time(18, 00), blank=True)
     timestamp =     models.DateTimeField(auto_now_add=True)
     updated =       models.DateTimeField(auto_now=True)
 
