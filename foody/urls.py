@@ -10,6 +10,7 @@ from django.views.generic.base import TemplateView
 #access templates with help of views
 from restaurants.views import restaurant_list, restaurant_detail, restaurant_create
 from foods.views import food_list, food_detail, food_create
+from reviews.views import review_list, review_create
 
 
 
@@ -25,7 +26,9 @@ urlpatterns = [
     path('foods/create/', food_create, name='foocreate'),
     path('foods/<int:res_id>/<food_name>/', food_detail, name='foodetail'),
 
-    path('reviews/',TemplateView.as_view(template_name="temp.html"), name='reviews'),
+    path('reviews/', review_list, name='reviews'),
+
+
     path('profile/', TemplateView.as_view(template_name="temp.html"), name='profile'),
     path('logout/', TemplateView.as_view(template_name="temp.html"), name='logout'),
     path('login/', TemplateView.as_view(template_name="temp.html"), name='login'),
