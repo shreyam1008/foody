@@ -1,6 +1,8 @@
 from django.contrib import admin
 
-from .models import Review
+from .models import ReviewRestaurant, ReviewFood
 
+model_classes = [ReviewFood, ReviewRestaurant]
 
-admin.site.register(Review)
+for model_class in model_classes:
+    admin.site.register(model_class)
