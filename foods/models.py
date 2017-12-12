@@ -4,7 +4,7 @@ from restaurants.models import Restaurant
 
 class Food(models.Model):
 
-    restaurant =    models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    restaurant =    models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name="res")
     name =          models.CharField(max_length=30, unique=True)
     price =         models.PositiveSmallIntegerField()
 
