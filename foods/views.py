@@ -13,14 +13,8 @@ def food_list(request):
     }
     return render(request, template_name, context)
 
-def food_detail(request):
-    template_name = ''
-    context = {
-
-    }
-    return render(request, template_name, context)
-
 def food_create(request):
+
     form = FoodCreateForm()
     errors = None
 
@@ -36,5 +30,12 @@ def food_create(request):
     template_name = 'foods/food_create.html'
     context = {
         "form": form, "errors": errors
+    }
+    return render(request, template_name, context)
+
+def food_detail(request):
+    template_name = ''
+    context = {
+
     }
     return render(request, template_name, context)

@@ -35,7 +35,7 @@ def restaurant_list(request):
 
 def restaurant_detail(request, slug):
     template_name = 'restaurants/restaurant_detail.html'
-    queryset = Restaurant.objects.filter(slug__iexact = slug)[0]
+    queryset = Restaurant.objects.filter(slug__iexact = slug).first()
     context = {
         "restaurant": queryset,
     }

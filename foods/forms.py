@@ -5,7 +5,7 @@ from .models import Food
 class FoodCreateForm(forms.ModelForm):
 
     class Meta:
-        models = Food
+        model = Food
         fields = [
             'restaurant',
             'name',
