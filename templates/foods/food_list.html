@@ -5,7 +5,7 @@
     <h2>Food list</h2>
     <ul>
         {% for food in foods %}
-            <li><a href="/restaurants/{{ food.restaurant }}/{{ food.name }}/">{{ food }}</a> by {{ food.restaurant }}</li>
+            <li><a href="{{ food.restaurant.id }}/{{ food.name }}/">{{ food }}</a> by {{ food.restaurant }}</li>
         {% endfor %}
     </ul>
 

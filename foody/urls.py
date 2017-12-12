@@ -23,6 +23,7 @@ urlpatterns = [
 
     path('foods/', food_list, name='foods'),
     path('foods/create/', food_create, name='foocreate'),
+    path('foods/<int:res_id>/<food_name>/', food_detail, name='foodetail'),
 
     path('reviews/',TemplateView.as_view(template_name="temp.html"), name='reviews'),
     path('profile/', TemplateView.as_view(template_name="temp.html"), name='profile'),

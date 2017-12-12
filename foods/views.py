@@ -33,9 +33,11 @@ def food_create(request):
     }
     return render(request, template_name, context)
 
-def food_detail(request):
-    template_name = ''
+def food_detail(request, res_id, food_name):
+    template_name = 'foods/food_detail.html'
+    queryset = Food.objects.filter(restaurant = res_id).filter(name__iexact=food_name).first()
+    # queryset = Food.objects.filter(name__iexact = food_name)
     context = {
-
+        "food": queryset,
     }
     return render(request, template_name, context)

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head_title %} Foods{{ block.super }}{% endblock %}
+
+{% block content %}
+    <h2>Food Detail</h2>
+
+    <h3>{{ food.name }}</h3>
+    <small>on {{ food.restaurant.name }}</small>
+    <h4>
+        Price:{{ food.price }}
+    </h4>
+
+
+{% endblock %}
