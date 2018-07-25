@@ -11,6 +11,7 @@ from django.views.generic.base import TemplateView
 from restaurants.views import restaurant_list, restaurant_detail, restaurant_create
 from foods.views import food_list, food_detail, food_create
 from reviews.views import review_list, review_create
+from apis.views import places_list
 
 
 
@@ -32,6 +33,8 @@ urlpatterns = [
     path('profile/', TemplateView.as_view(template_name="temp.html"), name='profile'),
     path('logout/', TemplateView.as_view(template_name="temp.html"), name='logout'),
     path('login/', TemplateView.as_view(template_name="temp.html"), name='login'),
+
+    path('apis/', places_list)
 ]
 
 # #old way 1.11
