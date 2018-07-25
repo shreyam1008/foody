@@ -34,7 +34,7 @@ urlpatterns = [
     path('logout/', TemplateView.as_view(template_name="temp.html"), name='logout'),
     path('login/', TemplateView.as_view(template_name="temp.html"), name='login'),
 
-    path('apis/', places_list)
+    path('apis/places/', places_list)
 ]
 
 # #old way 1.11
