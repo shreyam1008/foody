@@ -25,7 +25,7 @@ SECRET_KEY = '7z3h0s5bo%wf@qj0$f&hr)9m47yu_0)6!kxe5oog%zn6vc$%ft'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =  ['bhoodie.herokuapp.com', '.yourdomain.com']
+ALLOWED_HOSTS =  ['bhoodie.herokuapp.com', 'bhoodie.ck']
 
 
 # Application definition
