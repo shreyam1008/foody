@@ -3,8 +3,9 @@ from django.http import JsonResponse
 
 import requests
 
-def places_list(request):
-    response = {"aa": "aa",
-                    "cc": "dd"}
+def places_list(request, lat, long):
+
+    response = {"aa": str(lat)+"test1",
+                    "cc": str(long)+"bb"}
 
     return JsonResponse(response)
