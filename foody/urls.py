@@ -1,6 +1,6 @@
 from django.contrib import admin
 #django 2.0 way of url
-from django.urls import path
+from django.urls import path, include
 #django 1.11 way of url
 from django.urls import re_path
 
@@ -13,7 +13,7 @@ from foods.views import food_list, food_detail, food_create
 from reviews.views import review_list, review_create
 from apis.views import places_list, place_detail
 
-from Chatbot import urls as chatbot_urls
+from chatbot import urls as chatbot_urls
 
 
 

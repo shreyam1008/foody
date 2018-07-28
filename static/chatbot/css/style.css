@@ -1,0 +1,58 @@
+.jumbotron {
+       margin-bottom: 0;
+       padding: 20em;
+       background-image: url('/static/chatbot/hello.png') ;
+       background-repeat: no-repeat;
+       background-position: 20% 20%;
+       background-size: cover;
+
+     }
+     .bot-head {
+       text-align: left;
+     }
+     .description {
+       background-color: black;
+       text-align: center;
+       padding: 10em;
+       color: white;
+     }
+
+     .description h1{
+         color: #ecd1a6
+     }
+
+     .description p{
+         font-size: 22px;
+     }
+
+     .get-started {
+         margin-top: 100px;
+         text-align: center;
+     }
+
+     .get-started h1{
+         font-size: 80px;
+         font-family: Trajan;
+     }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    h1 {
+        font-family: Verdana;
+        font-size: 50px;
+    }
+
+    .myform {
+
+        background-color: antiquewhite;
+    }
+
+     .myform h2 {
+         font-size: 60px;
+         font-family: Georgia;
+         font-weight: 300;
+    }
+

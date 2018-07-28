@@ -1,0 +1,78 @@
+{#{% load staticfiles %}#}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BHAUJU</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'chatbot/css/style.css' %}">
+
+</head>
+
+<body onload="pageScroll()">
+
+<div class="container-fluid" onmousemove="stopScroll()">
+<div id="top" class="jumbotron">
+  <div class="bot-head">
+    <br/>
+    <h1>BHAUJU</h1>
+    <br>
+    <p>An online food ordering chatbot</p>
+  </div>
+</div>
+
+<div id="bottom" class="description" >
+  <h1>Description</h1>
+  <br>
+  <p> BHAUJU is an online food ordering chatbot. It is designed to help
+    restaurant and food providers reduce labour costs, reduce human errors
+    and to improve overall customer service experience. The chatbot helps
+    customers in choosing from various cuisines and restaurants and
+    their dishes from the menu of a picked restaurant, tracking the order
+    and delivery. </p>
+
+</div>
+<br/><br/>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="{% static 'chatbot/health.gif' %}">
+      </div>
+      <div class="get-started">
+        <h1> Let's Get Started </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center myform">
+  <h2> What's your name? </h2>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+        <form action="" id="searchform" method="post" onsubmit="return validateForm()" accept-charset="utf-8">
+
+        {% csrf_token %}
+          <input id="searchbox" name="UserName" class="form-control form-control-sm" placeholder="Enter Your Name">
+          <hr>
+          <button type="submit" class="btn btn-primary btn-lg">Let's Order!</button>
+        </form>
+      </div>
+    </div>
+</div>
+</div>
+<footer class="container-fluid text-center">
+  <p>PS3 Inc, 2018</p>
+
+</footer>
+
+<script src="{%  static 'chatbot/js/main.js' %}"></script>
+
+</body>
+</html>
