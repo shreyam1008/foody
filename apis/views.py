@@ -34,7 +34,7 @@ def places_list(request, lat, long):
     response = {"results": res_list}
     return JsonResponse(response)
 
-def get_photos():
+def get_photos(photos):
     photo_list = []
     for photo in photos:
         data = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference={ref}&key=AIzaSyCLUN6zu45xEvZa9M2RtGGERC7xuj2ZOHg".format(ref=str(photo['photo_reference']))
