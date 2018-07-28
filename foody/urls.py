@@ -11,7 +11,7 @@ from django.views.generic.base import TemplateView
 from restaurants.views import restaurant_list, restaurant_detail, restaurant_create
 from foods.views import food_list, food_detail, food_create
 from reviews.views import review_list, review_create
-from apis.views import places_list
+from apis.views import places_list, place_detail
 
 
 
@@ -36,6 +36,7 @@ urlpatterns = [
 
     # path('apis/places/'),
     path('api/places/lat=<lat>&long=<long>/', places_list, name='placelist'),
+    path('api/pdetail/id=<id>/', place_detail, name='placedetail'),
 ]
 
 # #old way 1.11
