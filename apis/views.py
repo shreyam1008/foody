@@ -34,14 +34,13 @@ def places_list(request, lat, long):
     response = {"results": res_list}
     return JsonResponse(response)
 
+
 def get_photos(photos):
     photo_list = []
     for photo in photos:
         data = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference={ref}&key=AIzaSyCLUN6zu45xEvZa9M2RtGGERC7xuj2ZOHg".format(ref=str(photo['photo_reference']))
         photo_list.append(data)
-
     return(photo_list)
-
 
 def get_reviews(reviews):
     #add reviews from other sides
@@ -52,6 +51,13 @@ def get_reviews(reviews):
         }
         review_list.append(data)
     return (review_list)
+
+def get_menu():
+    response = [
+        {"item": "momo", "price": 45, "votes": 5},
+        {"item": "tea", "price": 15, "votes": -3}
+    ]
+    return(response)
 
 
 def place_detail(request, id):
@@ -66,7 +72,8 @@ def place_detail(request, id):
                                 "opening_hours":json_data['opening_hours']['weekday_text'],
                                     "photos": get_photos(json_data['photos']),
                                         "review": get_reviews(json_data['reviews']),
-                                            "website": json_data['website']
+                                            "website": json_data['website'],
+                                                "menu": get_menu()
                     }
 
     return JsonResponse(response_items)

@@ -1,0 +1,29 @@
+RasaCore- Rasa is a framework for building conversational software: Messenger/Slack bots, Alexa skills, etc.
+ref-https://core.rasa.com/
+
+Keras-Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.
+ref-https://keras.io/models/about-keras-models/
+
+Flask- Flask is a microframework for Python based on Werkzeug, Jinja 2 
+ref-http://flask.pocoo.org/docs/1.0/
+ 
+scikit-learn- Machine Learning in Python. Simple and efficient tools for data mining and data analysis
+ref-http://scikit-learn.org/stable/documentation.html
+
+Suprise - A simple Python library for building and testing recommender systems.
+ref- https://surprise.readthedocs.io/en/stable/
+
+pandas- pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools
+ref -https://pandas.pydata.org/pandas-docs/stable/
+
+NLTK - NLTK, is a suite of libraries and programs for symbolic and statistical natural language processing for English .
+ref - https://www.nltk.org/py-modindex.html
+
+SciPy & NumPy - It is an open-source software for mathematics, science, and engineering.
+ref - https://www.scipy.org/docs.html
+
+TensorFlow - TensorFlow is an open-source software library for dataflow programming across a range of tasks.
+ref - https://github.com/tensorflow/tensorflow/releases/tag/v1.9.0
+
+Selinium - Selenium is a portable software-testing framework for web applications. Selenium provides a playback tool for authoring tests without the need of scripting language.
+ref - 	https://selenium-python.readthedocs.io/index.html
