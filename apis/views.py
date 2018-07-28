@@ -43,12 +43,14 @@ def get_photos(photos):
     return(photo_list)
 
 
-def get_reviews():
-    review_list = [
-        {"auth1": "review1"},
-        {"auth2": "review2"},
-        {"auth3": "review3"},
-    ]
+def get_reviews(reviews):
+    #add reviews from other sides
+    review_list = []
+    for review in reviews:
+        data = {
+            review['author_name']: review['text']
+        }
+        review_list.append(data)
     return (review_list)
 
 
@@ -63,7 +65,7 @@ def place_detail(request, id):
                             "formatted_phone_number":json_data['formatted_phone_number'],
                                 "opening_hours":json_data['opening_hours']['weekday_text'],
                                     "photos": get_photos(json_data['photos']),
-                                        "review": get_reviews(),#listof5[{author and review}]
+                                        "review": get_reviews(json_data['reviews']),
                                             "website": json_data['website']
                     }
 
