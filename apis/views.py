@@ -35,9 +35,14 @@ def places_list(request, lat, long):
     return JsonResponse(response)
 
 def get_photos():
-    link = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=CmRaAAAAJDQRzJj2QCs4M0W2nBFvKQuTxBeExPYXTYZsxeLkT9UxZ2H_hipsg0DZWi1eBErghFqza3Oqt9Psk5fvaygP--jQ0-EwqEcK3-pTio1w0rfFOOFaB0BzwWbNmNjRF3xkEhCBOxkvayGU110r_59dgW2tGhRdbt8aZuPO64Cx6UsFj5jGlWEAFQ&key=AIzaSyCLUN6zu45xEvZa9M2RtGGERC7xuj2ZOHg"
-    photo_list = [link, "link2", "link3"]
+    photo_list = []
+    for photo in photos:
+        data = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference={ref}&key=AIzaSyCLUN6zu45xEvZa9M2RtGGERC7xuj2ZOHg".format(ref=str(photo['photo_reference']))
+        photo_list.append(data)
+
     return(photo_list)
+
+
 def get_reviews():
     review_list = [
         {"auth1": "review1"},
@@ -50,15 +55,16 @@ def get_reviews():
 def place_detail(request, id):
     key = "AIzaSyCLUN6zu45xEvZa9M2RtGGERC7xuj2ZOHg"
     link = "https://maps.googleapis.com/maps/api/place/details/json?placeid={id}&key={key}".format(id=id, key=key)
-    json_data = requests.get(link).json()['result']
-
+    response = requests.get(link)
+    json_data = response.json()['result']
 
     response_items = {"name":json_data['name'],
                         "address":json_data['formatted_address'],
                             "formatted_phone_number":json_data['formatted_phone_number'],
                                 "opening_hours":json_data['opening_hours']['weekday_text'],
-                                    "photos": get_photos(),
+                                    "photos": get_photos(json_data['photos']),
                                         "review": get_reviews(),#listof5[{author and review}]
+                                            "website": json_data['website']
                     }
 
     return JsonResponse(response_items)
