@@ -58,8 +58,6 @@ def place_detail(request, id):
                                 "opening_hours":json_data['opening_hours']['weekday_text'],
                                     "photos": get_photos(),
                                         "review": get_reviews(),#listof5[{author and review}]
-
-
                     }
 
     return JsonResponse(response_items)
