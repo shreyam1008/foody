@@ -47,7 +47,8 @@ def get_reviews(reviews):
     review_list = []
     for review in reviews:
         data = {
-            review['author_name']: review['text']
+            "name": review['author_name'],
+            "text": review['text']
         }
         review_list.append(data)
     return (review_list)
