@@ -13,8 +13,7 @@ def test_func(request):
         a = request.POST
         print(a)
 
-        import json
-        print(json.loads(a))
+    
 
     return HttpResponseRedirect("")
 
