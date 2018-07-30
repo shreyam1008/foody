@@ -10,9 +10,6 @@ def test_func(request):
     if request.method =="GET":
         return JsonResponse({"hello there": "general kenobi"})
     elif request.method == 'POST':
-        a = request.POST
-        # b = response.body#body
-        # print(a+"-------------"+b)
-        print(a)
+        print(request.POST)
     return HttpResponseRedirect("")
 
