@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foody/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/foody/settings/base.py" afterDir="false" />
-    </list>
+    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
           <entry key="html" value="3" />
           <entry key="js" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="34" />
+          <entry key="py" value="35" />
           <entry key="tools used" value="1" />
         </counts>
       </usages-collector>
@@ -65,14 +61,14 @@
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="34" />
+          <entry key="Python" value="35" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apis/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="215">
@@ -81,6 +77,15 @@
                 <element signature="e#0#35#0" expanded="true" />
                 <marker date="1532876205588" expanded="true" signature="2038:2186" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -110,13 +115,13 @@
         <option value="$PROJECT_DIR$/foody/settings/production.py" />
         <option value="$PROJECT_DIR$/foody/urls.py" />
         <option value="$PROJECT_DIR$/foody/settings/local.py" />
-        <option value="$PROJECT_DIR$/foody/settings/__init__.py" />
         <option value="$PROJECT_DIR$/chatbot/urls.py" />
         <option value="$PROJECT_DIR$/tools used" />
         <option value="$PROJECT_DIR$/templates/chatbot/index.html" />
         <option value="$PROJECT_DIR$/static/chatbot/css/style.css" />
         <option value="$PROJECT_DIR$/foody/settings/base.py" />
         <option value="$PROJECT_DIR$/apis/views.py" />
+        <option value="$PROJECT_DIR$/foody/settings/__init__.py" />
       </list>
     </option>
   </component>
@@ -225,7 +230,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20075758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -350,13 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/chatbot/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -379,6 +376,13 @@
             <element signature="e#0#35#0" expanded="true" />
             <marker date="1532876205588" expanded="true" signature="2038:2186" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
