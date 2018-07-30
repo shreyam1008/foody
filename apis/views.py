@@ -37,20 +37,23 @@ def places_list(request, lat, long):
 
 def get_photos(photos):
     photo_list = []
-    for photo in photos:
-        data = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference={ref}&key=AIzaSyCLUN6zu45xEvZa9M2RtGGERC7xuj2ZOHg".format(ref=str(photo['photo_reference']))
-        photo_list.append(data)
+
+    if photos != None:
+        for photo in photos:
+            data = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference={ref}&key=AIzaSyCLUN6zu45xEvZa9M2RtGGERC7xuj2ZOHg".format(ref=str(photo['photo_reference']))
+            photo_list.append(data)
     return(photo_list)
 
 def get_reviews(reviews):
     #add reviews from other sides
     review_list = []
-    for review in reviews:
-        data = {
-            "name": review['author_name'],
-            "text": review['text']
-        }
-        review_list.append(data)
+    if reviews != None:
+        for review in reviews:
+            data = {
+                "name": review.get('author_name'),
+                "text": review.get('text')
+            }
+            review_list.append(data)
     return (review_list)
 
 def get_menu():
@@ -67,13 +70,17 @@ def place_detail(request, id):
     response = requests.get(link)
     json_data = response.json()['result']
 
-    response_items = {"name":json_data['name'],
-                        "address":json_data['formatted_address'],
-                            "formatted_phone_number":json_data['formatted_phone_number'],
-                                "opening_hours":json_data['opening_hours']['weekday_text'],
-                                    "photos": get_photos(json_data['photos']),
-                                        "review": get_reviews(json_data['reviews']),
-                                            "website": json_data['website'],
+    opening_default = {
+        "weekday_text": None
+    }
+
+    response_items = {"name":json_data.get('name'),
+                        "address":json_data.get('formatted_address'),
+                            "formatted_phone_number":json_data.get('formatted_phone_number'),
+                                "opening_hours":json_data.get('opening_hours', opening_default).get('weekday_text'),
+                                    "photos": get_photos(json_data.get('photos')),
+                                        "review": get_reviews(json_data.get('reviews')),
+                                            "website": json_data.get('website'),
                                                 "menu": get_menu()
                     }
 

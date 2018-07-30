@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI" />
+    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI">
+      <change beforePath="$PROJECT_DIR$/apis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foody/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/foody/settings/__init__.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +32,7 @@
         <counts>
           <entry key="css" value="19" />
           <entry key="html" value="51" />
-          <entry key="py" value="2221" />
+          <entry key="py" value="2427" />
           <entry key="tools used" value="1" />
           <entry key="txt" value="21" />
         </counts>
@@ -40,7 +43,7 @@
           <entry key="DjangoUrlPath" value="1" />
           <entry key="HTML" value="51" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="2220" />
+          <entry key="Python" value="2426" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -68,24 +71,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apis/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="-245">
+              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1532876205588" expanded="true" signature="2038:2186" ph="..." />
+                <marker date="1532939427283" expanded="true" signature="2130:2278" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="105">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,8 +126,8 @@
         <option value="$PROJECT_DIR$/templates/chatbot/index.html" />
         <option value="$PROJECT_DIR$/static/chatbot/css/style.css" />
         <option value="$PROJECT_DIR$/foody/settings/base.py" />
-        <option value="$PROJECT_DIR$/apis/views.py" />
         <option value="$PROJECT_DIR$/foody/settings/__init__.py" />
+        <option value="$PROJECT_DIR$/apis/views.py" />
       </list>
     </option>
   </component>
@@ -230,6 +236,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20075758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -368,21 +375,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/views.py">
+    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        <state relative-caret-position="105">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1532876205588" expanded="true" signature="2038:2186" ph="..." />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
+    <entry file="file://$PROJECT_DIR$/apis/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="-245">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1532939427283" expanded="true" signature="2130:2278" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
