@@ -12,13 +12,17 @@ def places_list(request, lat, long):
     link = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={location}&radius=2500&type=restaurant&key={key}".format(location=location, key=key)
     json_data = requests.get(link).json()
     res_list = []
+
+    open_default = {
+        "open_now": None
+    }
     for data in json_data['results']:
-        response_items = {"id": data['place_id'],
-                          "name": data['name'],
+        response_items = {"id": data.get('place_id'),
+                          "name": data.get('name'),
                           "location": {"lat": data['geometry']['location']['lat'],
                                        "lng": data['geometry']['location']['lng']},
-                          "open": True,#laterstr(data['opening_hours']['open_now']),
-                          "rating": 123,  # correctino rating extraction later data['raitng']
+                          "open": data.get("opening_hours",open_default).get("open_now"),
+                          "rating": data.get("rating"),  # correctino rating extraction later data['raitng']
                           }
 
         res_list.append(response_items)

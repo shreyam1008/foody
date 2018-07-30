@@ -130,7 +130,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static/chatbot"),
                     ]
 
 
-
 CORS_REPLACE_HTTPS_REFERER      = False
 HOST_SCHEME                     = "http://"
 SECURE_PROXY_SSL_HEADER         = None
