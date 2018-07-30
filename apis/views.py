@@ -22,7 +22,7 @@ def places_list(request, lat, long):
                           "location": {"lat": data['geometry']['location']['lat'],
                                        "lng": data['geometry']['location']['lng']},
                           "open": data.get("opening_hours",open_default).get("open_now"),
-                          "rating": data.get("rating"),  # correctino rating extraction later data['raitng']
+                          "rating": data.get("rating"),
                           }
 
         res_list.append(response_items)

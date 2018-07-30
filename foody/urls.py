@@ -15,7 +15,7 @@ from apis.views import places_list, place_detail
 
 from chatbot import urls as chatbot_urls
 
-
+from testview import test_func
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -41,6 +41,9 @@ urlpatterns = [
     path('api/pdetail/id=<id>/', place_detail, name='placedetail'),
 
     path('chatbot/', include(chatbot_urls)),
+
+    #test
+    path('test/', test_func)
 ]
 
 # #old way 1.11
