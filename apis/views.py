@@ -5,7 +5,7 @@ import requests, json
 
 def places_list(request, lat, long):
 
-    key = "AIzaSyDPpV7TjR8vgp9GLrSHmF3d565HMZlxhKo"
+    key = "AIzaSyDZf8JX6jd8Y13WE129uVgDJcbxNL0YfPc"
     location = "{lat},{long}".format(lat=lat, long=long)
     # radius = "2500"
     # link = f"https://maps.googleapis.com/maps/api/place/nearbysearch/output?{parameters}"
