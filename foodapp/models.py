@@ -11,8 +11,8 @@ class Restaurant(models.Model):
     bike_parking = models.BooleanField()
     car_parking = models.BooleanField()
     smoking = models.BooleanField()
-    vat = models.CharField(max_length=50, default="NE", validators=[validate_vat]) #no yes ne
-    prange = models.CharField(max_length=50, default="NE", validators=[validate_prange]) # no yes ne
+    # vat = models.CharField(max_length=50, default="NE", validators=[validate_vat]) #no yes ne
+    # prange = models.CharField(max_length=50, default="NE", validators=[validate_prange]) # no yes ne
     delivery = models.BooleanField()
 
     slug = models.SlugField(null=True, blank=True)
