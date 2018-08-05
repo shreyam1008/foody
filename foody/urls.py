@@ -39,6 +39,8 @@ urlpatterns = [
     # path('apis/places/'),
     path('api/places/lat=<lat>&long=<long>/', places_list, name='placelist'),
     path('api/pdetail/id=<id>/', place_detail, name='placedetail'),
+    #chatbot api
+    path('api/chatbot/', )
 
     path('chatbot/', include(chatbot_urls)),
 

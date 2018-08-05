@@ -12,6 +12,8 @@ def test_func(request):
     elif request.method == 'POST':
         a = request.POST
         print(a)
+        b = request.body
+        print(b)
 
 
     return HttpResponseRedirect("")
