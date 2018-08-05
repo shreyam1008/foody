@@ -45,7 +45,7 @@ urlpatterns = [
     # path('api/chatbot/', )
 
     #post apis
-    path('api/newuser/', user_reg, name='user_reg')
+    path('api/newuser/', user_reg, name='user_reg'),
 
     path('chatbot/', include(chatbot_urls)),
 

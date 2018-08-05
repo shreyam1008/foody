@@ -2,8 +2,6 @@ from django.db import models
 
 
 
-
-
 class Restaurant(models.Model):
     # owner =         models.ForeignKey(User, on_delete=models.CASCADE)
     id  =           models.CharField()
