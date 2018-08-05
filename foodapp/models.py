@@ -34,4 +34,5 @@ class Food(models.Model):
 
 class User(models.Model):
 
-    
+    name = models.CharField(max_length=60, blank=False)
+    email = models.EmailField(blank=False)

@@ -62,6 +62,7 @@ def get_reviews(reviews):
     return (review_list)
 
 def get_menu():
+    #get from database.create 
     response = [
         {"item": "momo", "price": 45, "votes": 5},
         {"item": "tea", "price": 15, "votes": -3}
