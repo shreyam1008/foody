@@ -5,7 +5,7 @@ import requests, json
 
 def places_list(request, lat, long):
 
-    key = "AIzaSyDKH1_tkLKeWn_-lQoAIYEMB9wQ6tdeL1M"
+    key = "AIzaSyCuSxIAwH4ipcLEmQZwzStvhC4lD3GMMMo"
     location = "{lat},{long}".format(lat=lat, long=long)
     # radius = "2500"
     # link = f"https://maps.googleapis.com/maps/api/place/nearbysearch/output?{parameters}"
@@ -28,13 +28,13 @@ def places_list(request, lat, long):
 
         res_list.append(response_items)
 
-        if (len(res_list) == 20):
-            token = json_data['next_page_token']
-            link += "&pagetoken={token}".format(token=token)
-        elif (len(res_list) >= 30):
-            break
-        else:
-            pass
+        # if (len(res_list) == 20):
+        #     token = json_data['next_page_token']
+        #     link += "&pagetoken={token}".format(token=token)
+        # elif (len(res_list) >= 30):
+        #     break
+        # else:
+        #     pass
 
     response = {"results": res_list}
     return JsonResponse(response)
