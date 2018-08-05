@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI">
-      <change beforePath="$PROJECT_DIR$/foodapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foody/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foody/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foody/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="675">
               <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -208,22 +205,6 @@
               <item name="foody" type="b2602c69:ProjectViewProjectNode" />
               <item name="foody" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="foody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="foodapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -271,7 +252,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21742424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,7 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foody/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="675">
           <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
