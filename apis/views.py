@@ -5,7 +5,7 @@ import requests, json
 
 def places_list(request, lat, long):
 
-    key = "AIzaSyDZf8JX6jd8Y13WE129uVgDJcbxNL0YfPc"
+    key = "AIzaSyA6pnyEvSVg7yOeCbtjaJi5pQHgA668aYw"
     location = "{lat},{long}".format(lat=lat, long=long)
     # radius = "2500"
     # link = f"https://maps.googleapis.com/maps/api/place/nearbysearch/output?{parameters}"
@@ -45,7 +45,7 @@ def get_photos(photos):
 
     if photos != None:
         for photo in photos:
-            data = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference={ref}&key=AIzaSyDKH1_tkLKeWn_-lQoAIYEMB9wQ6tdeL1M".format(ref=str(photo['photo_reference']))
+            data = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference={ref}&key=AIzaSyA6pnyEvSVg7yOeCbtjaJi5pQHgA668aYw".format(ref=str(photo['photo_reference']))
             photo_list.append(data)
     return(photo_list)
 
@@ -71,7 +71,7 @@ def get_menu():
 
 
 def place_detail(request, id):
-    key = "AIzaSyDKH1_tkLKeWn_-lQoAIYEMB9wQ6tdeL1M"
+    key = "AIzaSyA6pnyEvSVg7yOeCbtjaJi5pQHgA668aYw"
     link = "https://maps.googleapis.com/maps/api/place/details/json?placeid={id}&key={key}".format(id=id, key=key)
     response = requests.get(link)
     json_data = response.json()['result']

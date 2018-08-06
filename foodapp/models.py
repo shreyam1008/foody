@@ -4,8 +4,8 @@ from django.db import models
 
 class Restaurant(models.Model):
     # owner =         models.ForeignKey(User, on_delete=models.CASCADE)
-    id  =           models.CharField()
-    name =          models.CharField()
+    id  =           models.CharField(primary_key=True, max_length=150)
+    name =          models.CharField(max_length=150)
     bike_parking = models.BooleanField()
     car_parking = models.BooleanField()
     smoking = models.BooleanField()
