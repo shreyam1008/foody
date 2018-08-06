@@ -87,7 +87,10 @@ def place_detail(request, id):
                                     "photos": get_photos(json_data.get('photos')),
                                         "review": get_reviews(json_data.get('reviews')),
                                             "website": json_data.get('website'),
-                                                "menu": get_menu()
+                                                "menu": get_menu(),
+                                                    "location": {"lat": json_data['geometry']['location']['lat'],
+                                                                    "lng": json_data['geometry']['location']['lng']}
+
                     }
 
     return JsonResponse(response_items)
