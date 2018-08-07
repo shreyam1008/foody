@@ -33,6 +33,7 @@ def food_add(request):
         print(data)
         #after restauratn
         Food.objects.create(name=data['name'], price=data['price'])
+        print("ok done")
 
 
     return HttpResponseRedirect("")
