@@ -81,7 +81,9 @@ def place_detail(request, id):
     json_data = response.json()['result']
 
     opening_default = {
-        "weekday_text": None
+        "weekday_text": [
+                            "N/A",
+                        ]
     }
 
     response_items = {"name":json_data.get('name'),
