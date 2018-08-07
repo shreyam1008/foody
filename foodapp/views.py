@@ -11,3 +11,40 @@ def user_reg(request):
         print(a)
 
     return HttpResponseRedirect("")
+
+
+
+@csrf_exempt
+def food_add(request):
+
+    if request.method =="GET":
+        return JsonResponse({"hello there": "general kenobi"})
+    elif request.method == 'POST':
+        a = request.POST
+        print(a)
+
+    return HttpResponseRedirect("")
+
+
+@csrf_exempt
+def user_pref(request):
+
+    if request.method =="GET":
+        return JsonResponse({"hello there": "general kenobi"})
+    elif request.method == 'POST':
+        a = request.POST
+        print(a)
+
+    return HttpResponseRedirect("")
+
+
+@csrf_exempt
+def res_recomm(request):
+
+    if request.method =="GET":
+        return JsonResponse({"hello there": "general kenobi"})
+    elif request.method == 'POST':
+        a = request.POST
+        print(a)
+
+    return HttpResponseRedirect("")
