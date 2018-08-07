@@ -87,6 +87,7 @@ def place_detail(request, id):
     }
 
     response_items = {"name":json_data.get('name'),
+                      "id": id,
                         "address":json_data.get('formatted_address'),
                             "formatted_phone_number":json_data.get('formatted_phone_number'),
                                 "opening_hours":json_data.get('opening_hours', opening_default).get('weekday_text'),
