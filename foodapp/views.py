@@ -32,7 +32,7 @@ def food_add(request):
         data = request.POST
         print(data)
         #after restauratn
-        Food.objects.create(name=data['name'], price=data['price'])
+        Food.objects.create(restaurant=data['placeid'], name=data['name'], price=data['price'])
         print("ok done")
 
 
