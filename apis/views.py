@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from foodapp.views import restaurant_fill
 
 import requests, json
 
@@ -29,12 +30,15 @@ def places_list(request, lat, long):
         res_list.append(response_items)
 
         # if (len(res_list) == 20):
-        #     token = json_data['next_page_token']
+        #     token = json_data.get('next_page_token')
         #     link += "&pagetoken={token}".format(token=token)
         # elif (len(res_list) >= 30):
         #     break
         # else:
         #     pass
+
+    #to fill res in database
+    restaurant_fill(res_list)
 
     response = {"results": res_list}
     return JsonResponse(response)

@@ -47,13 +47,9 @@ urlpatterns = [
     #post apis
     path('api/newuser/', user_reg, name='user_reg'),
 
-
-    ###puts
     path('api/newfood/', food_add, name='food_add'),
     path('api/userprefrence/', pref_add, name='user_pref'),
     path('api/editres/', res_edit, name='res_edit'),
-    ####gets
-    #recommended
     path('api/reccomres/user=<email>/', res_recomm, name='res_recomm'),
     path('api/userprefrence/user=<email>/', pref_get, name='user_pref'),
 
