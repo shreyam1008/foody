@@ -13,7 +13,7 @@ from foods.views import food_list, food_detail, food_create
 from reviews.views import review_list, review_create
 from apis.views import places_list, place_detail
 
-from foodapp.views import user_reg, food_add, res_recomm, pref_add, pref_get, res_edit
+from foodapp.views import user_reg, food_add, res_recomm, pref_add, pref_get, res_edit, food_vote
 
 from chatbot import urls as chatbot_urls
 
@@ -49,11 +49,18 @@ urlpatterns = [
 
     path('api/newfood/', food_add, name='food_add'),
     path('api/userprefrence/', pref_add, name='user_pref'),
+
+    #post for restaurant edit. or add prefrences
     path('api/editres/', res_edit, name='res_edit'),
+
+
     path('api/reccomres/user=<email>/', res_recomm, name='res_recomm'),
 
 
     path('api/userprefrence/user=<email>/', pref_get, name='user_pref'),
+
+    #when user thums up or down. PUT
+    path('api/voting/', food_vote, name="food_vote")
 
 
 

@@ -79,7 +79,7 @@ def get_menu(res_id):
     if data:
         for x in data:
             response.append(
-                {"name": x.name, "price": x.price, "votes": 3}
+                {"name": x.name, "price": x.price, "votes": 0}
             )
     return (response)
 

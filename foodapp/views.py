@@ -62,27 +62,44 @@ def pref_add(request):
         instance.save()
     return HttpResponseRedirect("")
 
+def pref_get(request, email):
+
+    # get from database.create
+    data = Preference.objects.filter(email=email)
+
+    response = []
+
+    if data:
+        for x in data:
+            response.append(
+                {
+                    "email": email
+                    "bike_parking" = x['bike_parking'],
+                    "car_parking" = x['car_parking'],
+                    "smoking" = x['smoking'],
+                    "vat" = x['vat'],
+                    "prange" = x['prange'],
+                    "delivery" = x['delivery'],
+                }
+            )
+    return (response)
+
+
+
 @csrf_exempt
 def res_edit(request):
 
     if request.method =="GET":
         return JsonResponse({"hello there ": "general kenobi"})
     elif request.method == 'POST':
-        a = request.POST
-        print(a)
+        data = request.POST
+        print(data)
+
+        # instance = Restaurant.objects.filter(id=data.resid)
+        
 
     return HttpResponseRedirect("")
 
-def pref_get(request, email):
-    return JsonResponse({"email": email,
-                            "bike_parking": "YES",
-                                "car_parking": "YES",
-                                    "smoking": "NO",
-                                        "vat": "ANY",
-                                            "prange": "ANY",
-                                                "delivery": "NO"
-                         }
-                        )
 
 def res_recomm(request, email):
     return JsonResponse({"results": [
@@ -96,6 +113,16 @@ def res_recomm(request, email):
                          }
     )
 
+#countig votes
+@csrf_exempt
+def food_vote(request):
 
+    if request.method =="GET":
+        return JsonResponse({"hello there ": "general kenobi"})
+    elif request.method == 'POST':
+        a = request.POST
+        print(a)
+
+    return HttpResponseRedirect("")
 
 
