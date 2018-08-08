@@ -23,7 +23,7 @@ def restaurant_fill(res_list):
             instance = Restaurant.objects.create(id=res.get('id'), name=res.get('name'))
             instance.save()
 
-
+#pPUT for food/menu
 @csrf_exempt
 def food_add(request):
 
@@ -39,6 +39,8 @@ def food_add(request):
     return HttpResponseRedirect("")
 
 
+
+
 @csrf_exempt
 def pref_add(request):
 
@@ -51,11 +53,13 @@ def pref_add(request):
 
         instance = Preference.objects.create(user_id = data['email'],
                                                 bike_parking=data['bike_parking'],
-
+                                                car_parking=data['car_parking'],
+                                                smoking=data['smoking'],
+                                                vat=data['vat'],
+                                                prange=data['prange'],
+                                                delivery=data['delivery'],
                                              )
-
-
-
+        instance.save()
     return HttpResponseRedirect("")
 
 @csrf_exempt
@@ -91,7 +95,6 @@ def res_recomm(request, email):
                                         ]
                          }
     )
-
 
 
 
