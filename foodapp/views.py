@@ -35,13 +35,35 @@ def food_add(request):
     elif request.method == 'POST':
         data = request.POST
         print(data)
-        instance = Food.objects.create(restaurant_id=data['placeid'], name=data['name'], price=data['price'])
+        instance = Food.objects.create(restaurant_id=data['placeid'],
+                                       name=data['name'],
+                                       price=data['price'])
         instance.save()
         print("ok done")
 
     return HttpResponseRedirect("")
 
 
+#countig votes
+@csrf_exempt
+def food_vote(request):
+
+    if request.method =="GET":
+        return JsonResponse({"hello there ": "general kenobi"})
+    elif request.method == 'POST':
+        data = request.POST
+        print(data)
+
+        instance = Food.objects.filter(restaurant=data['placeid']).get(name=data['name'])
+
+        if data['vote'] == "UP":
+            instance.votes += 1
+
+        if data['vote'] == "DOWN":
+            instance.votes -= 1
+
+
+    return HttpResponseRedirect("")
 
 
 @csrf_exempt
@@ -122,17 +144,3 @@ def res_recomm(request, email):
                                         ]
                          }
     )
-
-#countig votes
-@csrf_exempt
-def food_vote(request):
-
-    if request.method =="GET":
-        return JsonResponse({"hello there ": "general kenobi"})
-    elif request.method == 'POST':
-        a = request.POST
-        print(a)
-
-    return HttpResponseRedirect("")
-
-
