@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI">
-      <change beforePath="$PROJECT_DIR$/apis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +32,7 @@
         <counts>
           <entry key="css" value="19" />
           <entry key="html" value="65" />
-          <entry key="py" value="7421" />
+          <entry key="py" value="7428" />
           <entry key="tools used" value="1" />
           <entry key="txt" value="21" />
         </counts>
@@ -44,7 +43,7 @@
           <entry key="DjangoUrlPath" value="2" />
           <entry key="HTML" value="65" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="7419" />
+          <entry key="Python" value="7426" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,11 +102,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/foodapp/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+                <state relative-caret-position="360">
+                  <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
                   <folding>
                     <element signature="e#0#58#0" expanded="true" />
-                    <marker date="1533723495247" expanded="true" signature="521:747" ph="..." />
+                    <marker date="1533723903013" expanded="true" signature="521:747" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -537,11 +536,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foodapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="360">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1533723495247" expanded="true" signature="521:747" ph="..." />
+            <marker date="1533723903013" expanded="true" signature="521:747" ph="..." />
           </folding>
         </state>
       </provider>
