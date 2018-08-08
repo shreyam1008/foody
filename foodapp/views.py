@@ -50,8 +50,8 @@ def pref_add(request):
         data = request.POST
         print(data)
 
-
-        instance = Preference.objects.create(user_id = data['email'],
+#user_id = data['email'],
+        instance = Preference.objects.create(
                                                 bike_parking=data['bike_parking'],
                                                 car_parking=data['car_parking'],
                                                 smoking=data['smoking'],
@@ -60,6 +60,7 @@ def pref_add(request):
                                                 delivery=data['delivery'],
                                              )
         instance.save()
+
     return HttpResponseRedirect("")
 
 def pref_get(request, email):
@@ -80,7 +81,7 @@ def pref_get(request, email):
                 "delivery" : x['delivery']
             }
 
-    return (response)
+    return JsonResponse(response)
 
 
 @csrf_exempt
