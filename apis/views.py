@@ -80,7 +80,7 @@ def get_menu(res_id):
             response.append(
                 {"name": x.name, "price": x.price, "votes": 0}
             )
-    return (response)
+        return (response)
 
 
 def place_detail(request, id):

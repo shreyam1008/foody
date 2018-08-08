@@ -65,18 +65,19 @@ def pref_add(request):
 def pref_get(request, email):
 
     # get from database.create
-    data = Preference.objects.filter(email=email)
+    x = Preference.objects.filter(email=email)
 
+
+    # response = []
     if data:
-        response =
-            {
-                "email": email
-                "bike_parking" = x['bike_parking'],
-                "car_parking" = x['car_parking'],
-                "smoking" = x['smoking'],
-                "vat" = x['vat'],
-                "prange" = x['prange'],
-                "delivery" = x['delivery']
+        response = {
+                "email": email,
+                "bike_parking" : x['bike_parking'],
+                "car_parking" : x['car_parking'],
+                "smoking" : x['smoking'],
+                "vat" : x['vat'],
+                "prange" : x['prange'],
+                "delivery" : x['delivery']
             }
 
     return (response)
@@ -92,7 +93,7 @@ def res_edit(request):
         print(data)
 
         instance = Restaurant.objects.filter(id=data.resid)
-        instance.bike
+        # instance.bike
 
     return HttpResponseRedirect("")
 
