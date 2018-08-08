@@ -11,7 +11,10 @@ def user_reg(request):
     elif request.method == 'POST':
         data = request.POST
         print(data)
-        User.objects.create(email=data['email'], name=data['name'])
+        userinstance = User.objects.create(email=data['email'], name=data['name'])
+        userinstance.save()
+        prefinstance = Preference.objects.create(user = data['email'])
+        prefinstance.save()
 
 
     return HttpResponseRedirect("")
@@ -50,16 +53,18 @@ def pref_add(request):
         data = request.POST
         print(data)
 
-#user_id = data['email'],
-        instance = Preference.objects.create(
-                                                bike_parking=data['bike_parking'],
-                                                car_parking=data['car_parking'],
-                                                smoking=data['smoking'],
-                                                vat=data['vat'],
-                                                prange=data['prange'],
-                                                delivery=data['delivery'],
-                                             )
-        instance.save()
+        x = Preference.objects.filter(user__email=data['email'])
+
+        if not x:
+            instance = Preference.objects.create(   user = data['email'],
+                                                    bike_parking=data['bike_parking'],
+                                                    car_parking=data['car_parking'],
+                                                    smoking=data['smoking'],
+                                                    vat=data['vat'],
+                                                    prange=data['prange'],
+                                                    delivery=data['delivery'],
+                                                 )
+            instance.save()
 
     return HttpResponseRedirect("")
 
