@@ -65,7 +65,7 @@ def pref_add(request):
 def pref_get(request, email):
 
     # get from database.create
-    x = Preference.objects.filter(email=email)
+    x = Preference.objects.filter(user__email=email)
 
 
     # response = []
