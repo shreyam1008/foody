@@ -13,7 +13,7 @@ def user_reg(request):
         print(data)
         userinstance = User.objects.create(email=data['email'], name=data['name'])
         userinstance.save()
-        prefinstance = Preference.objects.create(user = data['email'])
+        prefinstance = Preference.objects.create(user_id = data['email'])
         prefinstance.save()
 
 
