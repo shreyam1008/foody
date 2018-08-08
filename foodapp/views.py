@@ -68,16 +68,16 @@ def pref_get(request, email):
     data = Preference.objects.filter(email=email)
 
     if data:
-            response =
-                {
-                    "email": email
-                    "bike_parking" = x['bike_parking'],
-                    "car_parking" = x['car_parking'],
-                    "smoking" = x['smoking'],
-                    "vat" = x['vat'],
-                    "prange" = x['prange'],
-                    "delivery" = x['delivery']
-                }
+        response =
+            {
+                "email": email
+                "bike_parking" = x['bike_parking'],
+                "car_parking" = x['car_parking'],
+                "smoking" = x['smoking'],
+                "vat" = x['vat'],
+                "prange" = x['prange'],
+                "delivery" = x['delivery']
+            }
 
     return (response)
 
