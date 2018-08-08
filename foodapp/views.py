@@ -71,19 +71,19 @@ def pref_add(request):
 def pref_get(request, email):
 
     # get from database.create
-    x = Preference.objects.filter(user__email=email)
+    x = Preference.objects.get(user__email=email)
 
 
     response = {}
     if x:
         response = {
                 "email": email,
-                "bike_parking" : x['bike_parking'],
-                "car_parking" : x['car_parking'],
-                "smoking" : x['smoking'],
-                "vat" : x['vat'],
-                "prange" : x['prange'],
-                "delivery" : x['delivery']
+                "bike_parking" : x,
+                "car_parking" : x.car_parking,
+                "smoking" : x.smoking,
+                "vat" : x.vat,
+                "prange" : x.prange,
+                "delivery" : x.delivery
             }
 
     return JsonResponse(response)

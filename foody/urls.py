@@ -49,14 +49,16 @@ urlpatterns = [
 
     path('api/newfood/', food_add, name='food_add'),
 
-    #put for user prefrnce
-    path('api/userprefrence/', pref_add, name='user_pref'),
+
 
     #post for restaurant edit. or add prefrences
     path('api/editres/', res_edit, name='res_edit'),
 
 
     path('api/reccomres/user=<email>/', res_recomm, name='res_recomm'),
+
+    # put for user prefrnce
+    path('api/userprefrence/', pref_add, name='user_pref'),
 
     #get for user prefrence
     path('api/userprefrence/user=<email>/', pref_get, name='user_pref'),
