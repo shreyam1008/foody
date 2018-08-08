@@ -70,8 +70,7 @@ def pref_get(request, email):
     response = []
 
     if data:
-        for x in data:
-            response.append(
+            response =
                 {
                     "email": email
                     "bike_parking" = x['bike_parking'],
@@ -81,7 +80,7 @@ def pref_get(request, email):
                     "prange" = x['prange'],
                     "delivery" = x['delivery'],
                 }
-            )
+            
     return (response)
 
 
