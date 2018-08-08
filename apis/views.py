@@ -68,11 +68,11 @@ def get_reviews(reviews):
             review_list.append(data)
     return (review_list)
 
+
 # get request of foods/meny
 def get_menu(res_id):
     # get from database.create
     data = Food.objects.filter(restaurant=res_id)
-
     response = []
 
     if data:
