@@ -58,9 +58,11 @@ def food_vote(request):
 
         if data['vote'] == "UP":
             instance.votes += 1
+            instance.save()
 
         if data['vote'] == "DOWN":
             instance.votes -= 1
+            instance.save()
 
 
     return HttpResponseRedirect("")
