@@ -32,7 +32,7 @@
         <counts>
           <entry key="css" value="19" />
           <entry key="html" value="65" />
-          <entry key="py" value="7428" />
+          <entry key="py" value="7454" />
           <entry key="tools used" value="1" />
           <entry key="txt" value="21" />
         </counts>
@@ -43,7 +43,7 @@
           <entry key="DjangoUrlPath" value="2" />
           <entry key="HTML" value="65" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="7426" />
+          <entry key="Python" value="7452" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,11 +102,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/foodapp/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+                <state relative-caret-position="330">
+                  <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#58#0" expanded="true" />
-                    <marker date="1533724198140" expanded="true" signature="521:747" ph="..." />
+                    <marker date="1533724490736" expanded="true" signature="521:747" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -536,11 +536,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foodapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        <state relative-caret-position="330">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1533724198140" expanded="true" signature="521:747" ph="..." />
+            <marker date="1533724490736" expanded="true" signature="521:747" ph="..." />
           </folding>
         </state>
       </provider>

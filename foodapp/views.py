@@ -68,7 +68,7 @@ def pref_get(request, email):
     x = Preference.objects.filter(user__email=email)
 
 
-    # response = []
+    response = {}
     if x:
         response = {
                 "email": email,
