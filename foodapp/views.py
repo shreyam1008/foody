@@ -98,7 +98,7 @@ def res_edit(request):
         data = request.POST
         print(data)
 
-        instance = Restaurant.objects.filter(id=data.resid)
+        instance = Restaurant.objects.get(id=data.resid)
         # instance.bike
 
     return HttpResponseRedirect("")
