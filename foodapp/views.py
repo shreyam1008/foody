@@ -99,7 +99,14 @@ def res_edit(request):
         print(data)
 
         instance = Restaurant.objects.get(id=data.resid)
-        # instance.bike
+        instance.bike_parking = data['bike_parking']
+        instance.car_parking =  data['car_parking']
+        instance.delivery = data['delivery']
+        instance.smoking = data['smoking']
+        instance.prange = data['prange']
+        instance.vat = data['vat']
+
+        instance.save()
 
     return HttpResponseRedirect("")
 

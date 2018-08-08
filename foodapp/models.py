@@ -75,7 +75,7 @@ class Preference(models.Model):
     car_parking = models.CharField(max_length=50, default="NO", choices=YN_CHOICES)
     smoking = models.CharField(max_length=50, default="NO", choices=YN_CHOICES)
     vat = models.CharField(max_length=50, default="ANY", choices=VAT_CHOICES)
-    prange = models.CharField(max_length=50, default=0,  choices=RANGE_CHOICES)
+    prange = models.CharField(max_length=50, default="ANY",  choices=RANGE_CHOICES)
     delivery = models.CharField(max_length=50, default="NO", choices=YN_CHOICES)
 
     def __str__(self):
