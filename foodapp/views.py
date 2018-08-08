@@ -69,7 +69,7 @@ def pref_get(request, email):
 
 
     # response = []
-    if data:
+    if x:
         response = {
                 "email": email,
                 "bike_parking" : x['bike_parking'],
