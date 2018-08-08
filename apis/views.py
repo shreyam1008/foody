@@ -12,7 +12,7 @@ def places_list(request, lat, long):
     # link = f"https://maps.googleapis.com/maps/api/place/nearbysearch/output?{parameters}"
     link = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={location}&radius=2500&type=restaurant&key={key}".format(location=location, key=key)
     json_data = requests.get(link).json()
-    print(json_data)
+    # print(json_data)
     res_list = []
 
     open_default = {

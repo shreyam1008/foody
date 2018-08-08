@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from .models import User, Food, Restaurant
+from .models import User, Food, Restaurant, Preference
 
 @csrf_exempt
 def user_reg(request):
@@ -19,8 +19,9 @@ def user_reg(request):
 
 def restaurant_fill(res_list):
     for res in res_list:
-        if not Restaurant.objects.filter(res.get('id')):
-            Restaurant.objects.create(id=res.get('id'), name=res.get('name'))
+        if not Restaurant.objects.filter(id = res.get('id')):
+            instance = Restaurant.objects.create(id=res.get('id'), name=res.get('name'))
+            instance.save()
 
 
 @csrf_exempt
@@ -31,10 +32,9 @@ def food_add(request):
     elif request.method == 'POST':
         data = request.POST
         print(data)
-        #after restauratn
-        Food.objects.create(restaurant=data['placeid'], name=data['name'], price=data['price'])
+        instance = Food.objects.create(restaurant_id=data['placeid'], name=data['name'], price=data['price'])
+        instance.save()
         print("ok done")
-
 
     return HttpResponseRedirect("")
 
@@ -45,8 +45,16 @@ def pref_add(request):
     if request.method =="GET":
         return JsonResponse({"hello there ": "general kenobi"})
     elif request.method == 'POST':
-        a = request.POST
-        print(a)
+        data = request.POST
+        print(data)
+
+
+        instance = Preference.objects.create(user_id = data['email'],
+                                                bike_parking=data['bike_parking'],
+                                             
+                                             )
+
+
 
     return HttpResponseRedirect("")
 
@@ -65,7 +73,7 @@ def pref_get(request, email):
     return JsonResponse({"email": email,
                             "bike_parking": "YES",
                                 "car_parking": "YES",
-                                    "smoking": "ANY",
+                                    "smoking": "NO",
                                         "vat": "ANY",
                                             "prange": "ANY",
                                                 "delivery": "NO"

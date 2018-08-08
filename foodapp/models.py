@@ -45,7 +45,7 @@ class Restaurant(models.Model):
 class Food(models.Model):
 
     restaurant =    models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name="res")
-    name =          models.CharField(max_length=30, unique=True, primary_key=True)
+    name =          models.CharField(max_length=30)
     price =         models.PositiveSmallIntegerField(blank=False)
     votes =         models.IntegerField(blank=False, default=0)
 

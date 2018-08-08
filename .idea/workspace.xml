@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foods/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/foods/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foods/migrations/0002_auto_20171212_0007.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foods/migrations/0003_auto_20171212_1539.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foods/migrations/0004_auto_20171212_1607.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/foods/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foody/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/foody/settings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foody/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foody/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0002_auto_20171210_1732.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0003_restaurant_slug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0004_auto_20171210_1805.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0005_auto_20171210_1813.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0006_auto_20171210_1814.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0007_auto_20171210_1836.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0008_auto_20171210_1917.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0009_restaurant_owner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/migrations/0010_auto_20171211_1840.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviews/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/migrations/0001_initial.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +56,7 @@
         <counts>
           <entry key="css" value="19" />
           <entry key="html" value="65" />
-          <entry key="py" value="6378" />
+          <entry key="py" value="6669" />
           <entry key="tools used" value="1" />
           <entry key="txt" value="21" />
         </counts>
@@ -43,7 +67,7 @@
           <entry key="DjangoUrlPath" value="2" />
           <entry key="HTML" value="65" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="6376" />
+          <entry key="Python" value="6667" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,7 +77,7 @@
           <entry key="html" value="4" />
           <entry key="js" value="2" />
           <entry key="png" value="1" />
-          <entry key="py" value="112" />
+          <entry key="py" value="120" />
           <entry key="tools used" value="2" />
           <entry key="txt" value="2" />
         </counts>
@@ -65,75 +89,76 @@
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="112" />
+          <entry key="Python" value="120" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodapp/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1533646917748" expanded="true" signature="80:359" ph="..." />
-                <marker date="1533646917748" expanded="true" signature="2667:2677" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apis/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foody/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodapp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-                <marker date="1533659562429" expanded="true" signature="509:672" ph="..." />
-                <marker date="1533659562429" expanded="true" signature="2062:2607" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5606838">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/foodapp/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="474">
+                  <caret line="70" column="16" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                    <marker date="1533661574967" expanded="true" signature="80:359" ph="..." />
+                    <marker date="1533661574967" expanded="true" signature="2636:2646" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/foodapp/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="253">
+                  <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+                  <folding>
+                    <element signature="e#0#58#0" expanded="true" />
+                    <marker date="1533695919115" expanded="true" signature="521:728" ph="..." />
+                    <marker date="1533695919115" expanded="true" signature="2343:2888" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/foody/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/foodapp/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="339">
+                  <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                    <marker date="1533661574967" expanded="true" signature="80:359" ph="..." />
+                    <marker date="1533661574967" expanded="true" signature="2636:2646" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -143,6 +168,7 @@
       <find>hello.p</find>
       <find>cs</find>
       <find>csrf</find>
+      <find>date</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -164,14 +190,15 @@
         <option value="$PROJECT_DIR$/chatbot/views.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/foody/settings/production.py" />
-        <option value="$PROJECT_DIR$/foody/settings/base.py" />
-        <option value="$PROJECT_DIR$/foody/settings/local.py" />
-        <option value="$PROJECT_DIR$/foodapp/models.py" />
         <option value="$PROJECT_DIR$/foodapp/admin.py" />
+        <option value="$PROJECT_DIR$/apis/views.py" />
+        <option value="$PROJECT_DIR$/foody/settings/__init__.py" />
+        <option value="$PROJECT_DIR$/foodapp/models.py" />
+        <option value="$PROJECT_DIR$/foods/models.py" />
+        <option value="$PROJECT_DIR$/foody/settings/local.py" />
+        <option value="$PROJECT_DIR$/foody/settings/base.py" />
         <option value="$PROJECT_DIR$/foody/urls.py" />
         <option value="$PROJECT_DIR$/foodapp/views.py" />
-        <option value="$PROJECT_DIR$/foody/settings/__init__.py" />
-        <option value="$PROJECT_DIR$/apis/views.py" />
       </list>
     </option>
   </component>
@@ -201,18 +228,7 @@
             <path>
               <item name="foody" type="b2602c69:ProjectViewProjectNode" />
               <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="apis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foody" type="b2602c69:ProjectViewProjectNode" />
               <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="foody" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +280,7 @@
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22575757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11363637" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -331,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/chatbot/health.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -399,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="4" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -434,13 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foody/settings/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foody/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
@@ -464,13 +459,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foody/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foody/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviews/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -508,10 +496,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foods/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foody/settings/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foody/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-591">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1533661574967" expanded="true" signature="80:359" ph="..." />
+            <marker date="1533661574967" expanded="true" signature="2636:2646" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/foody/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        <state relative-caret-position="324">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="28" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -520,41 +574,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foodapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="253">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1533659562429" expanded="true" signature="509:672" ph="..." />
-            <marker date="1533659562429" expanded="true" signature="2062:2607" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1533646917748" expanded="true" signature="80:359" ph="..." />
-            <marker date="1533646917748" expanded="true" signature="2667:2677" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apis/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1533695919115" expanded="true" signature="521:728" ph="..." />
+            <marker date="1533695919115" expanded="true" signature="2343:2888" ph="..." />
           </folding>
         </state>
       </provider>

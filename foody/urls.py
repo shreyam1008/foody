@@ -51,6 +51,8 @@ urlpatterns = [
     path('api/userprefrence/', pref_add, name='user_pref'),
     path('api/editres/', res_edit, name='res_edit'),
     path('api/reccomres/user=<email>/', res_recomm, name='res_recomm'),
+
+
     path('api/userprefrence/user=<email>/', pref_get, name='user_pref'),
 
 
