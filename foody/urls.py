@@ -60,7 +60,7 @@ urlpatterns = [
     path('api/userprefrence/user=<email>/', pref_get, name='user_pref'),
 
     #when user thums up or down. PUT
-    path('api/voting/', food_vote, name="food_vote")
+    path('api/voting/', food_vote, name="food_vote"),
 
 
 

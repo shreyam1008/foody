@@ -85,7 +85,6 @@ def pref_get(request, email):
     return (response)
 
 
-
 @csrf_exempt
 def res_edit(request):
 
@@ -95,8 +94,8 @@ def res_edit(request):
         data = request.POST
         print(data)
 
-        # instance = Restaurant.objects.filter(id=data.resid)
-        
+        instance = Restaurant.objects.filter(id=data.resid)
+        instance.bike
 
     return HttpResponseRedirect("")
 
