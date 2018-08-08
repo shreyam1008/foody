@@ -67,8 +67,6 @@ def pref_get(request, email):
     # get from database.create
     data = Preference.objects.filter(email=email)
 
-    response = []
-
     if data:
             response =
                 {
@@ -78,9 +76,9 @@ def pref_get(request, email):
                     "smoking" = x['smoking'],
                     "vat" = x['vat'],
                     "prange" = x['prange'],
-                    "delivery" = x['delivery'],
+                    "delivery" = x['delivery']
                 }
-            
+
     return (response)
 
 
