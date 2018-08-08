@@ -51,7 +51,7 @@ def pref_add(request):
 
         instance = Preference.objects.create(user_id = data['email'],
                                                 bike_parking=data['bike_parking'],
-                                             
+
                                              )
 
 
