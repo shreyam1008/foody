@@ -160,10 +160,10 @@ def review_add(request):
         print(data)
 
 
-        instance = RateReview.objects.create(restaurant_id=data['placeid'],
+        instance = RateReview.objects.create(restaurant=data['placeid'],
                                              email=data['email'],
                                              rating=data['rating'],
-                                             comment=data['comment']
+                                             comment=data['comment'],
                                              )
         instance.save()
 
