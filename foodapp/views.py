@@ -192,14 +192,4 @@ def review_get(request, rest_id):
 
     response = {"reviews": instance}
 
-        # data = Food.objects.filter(restaurant=res_id)
-        # response = []
-        #
-        # if data:
-        #     for x in data:
-        #         response.append(
-        #             {"name": x.name, "price": x.price, "votes": x.votes}
-        #         )
-        #     return (response)
-
     return JsonResponse(response)
