@@ -135,6 +135,24 @@ def res_edit(request):
     return HttpResponseRedirect("")
 
 
+
+def res_info(request, rest_id):
+
+    # get from database.create
+    x = Restaurant.objects.get(restaurant_id=rest_id)
+
+    if data:
+        response = {
+            "bike_parking": x.bike_parking,
+            "car_parking": x.car_parking,
+            "smoking": x.smoking,
+            "vat": x.vat,
+            "prange": x.prange,
+            "delivery": x.delivery
+        }
+
+    return JsonResponse(response)
+
 def res_recomm(request, email):
 
 
@@ -160,7 +178,7 @@ def review_add(request):
         print(data)
 
 
-        instance = RateReview.objects.create(restaurant=data['placeid'],
+        instance = RateReview.objects.create(restaurant_id=data['placeid'],
                                              email=data['email'],
                                              rating=data['rating'],
                                              comment=data['comment'],
