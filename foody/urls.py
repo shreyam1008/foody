@@ -13,7 +13,7 @@ from foods.views import food_list, food_detail, food_create
 from reviews.views import review_list, review_create
 from apis.views import places_list, place_detail
 
-from foodapp.views import user_reg, food_add, res_recomm, pref_add, pref_get, res_edit, food_vote
+from foodapp.views import user_reg, food_add, res_recomm, pref_add, pref_get, res_edit, food_vote, review_add, review_get
 
 from chatbot import urls as chatbot_urls
 
@@ -67,6 +67,10 @@ urlpatterns = [
     path('api/voting/', food_vote, name="food_vote"),
 
 
+    #POST review
+    path('api/review/', review_add, name='review_add'),
+    #GET review
+    path('api/review/id=<rest_id>/', review_get, name='review_get'),
 
     path('chatbot/', include(chatbot_urls)),
 

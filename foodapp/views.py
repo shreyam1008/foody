@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from .models import User, Food, Restaurant, Preference
+from .models import User, Food, Restaurant, Preference, RateReview
 
 @csrf_exempt
 def user_reg(request):
@@ -136,13 +136,70 @@ def res_edit(request):
 
 
 def res_recomm(request, email):
+
+
     return JsonResponse({"results": [
+                                        "ChIJywHkp8kZ6zkRliM0q7MuHcI",
+                                        "ChIJHUvbqzQY6zkRrqQtyHiVDIg",
                                         "ChIJNWXIzkUZ6zkR272DWRQBzOs",
-                                        "ChIJNWXIzkUZ6zkR272DWRQBzOs",
-                                        "ChIJNWXIzkUZ6zkR272DWRQBzOs",
-                                        "ChIJNWXIzkUZ6zkR272DWRQBzOs",
+                                        "ChIJ1TqSqcsZ6zkRfDNVCDsswxA",
                                         "ChIJ3cbjcWYZ6zkROlDr-i5TJaI",
                                         "ChIJj9w2oDcZ6zkR2-Iwm9Q4nZk",
                                         ]
                          }
     )
+
+
+@csrf_exempt
+def review_add(request):
+
+    if request.method =="GET":
+        return JsonResponse({"hello there": "general kenobi"})
+    elif request.method == 'POST':
+        data = request.POST
+        print(data)
+
+
+        instance = RateReview.objects.create(restaurant_id=data['placeid'],
+                                             email=data['email'],
+                                             rating=data['rating'],
+                                             comment=data['comment']
+                                             )
+        instance.save()
+
+
+        print("ok done")
+
+    return HttpResponseRedirect("")
+
+
+def review_get(request, rest_id):
+
+    # get from database.create
+    data = RateReview.objects.filter(restaurant_id=rest_id)
+
+
+    instance = []
+    for x in data:
+        if x:
+            instance.append(
+                {
+                    "email": x.email,
+                    "rating": x.rating,
+                    "comment" : x.comment
+                }
+            )
+
+    response = {"reviews": instance}
+
+        # data = Food.objects.filter(restaurant=res_id)
+        # response = []
+        #
+        # if data:
+        #     for x in data:
+        #         response.append(
+        #             {"name": x.name, "price": x.price, "votes": x.votes}
+        #         )
+        #     return (response)
+
+    return JsonResponse(response)

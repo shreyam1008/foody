@@ -55,8 +55,9 @@ class Food(models.Model):
 class RateReview(models.Model):
 
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name="restu")
+    email = models.EmailField(blank=True)
     rating = models.SmallIntegerField(blank=True, choices=RATING_CHOICES)
-    comment_head    = models.CharField(max_length=100, null=True, blank=True)
+    comment    = models.CharField(max_length=100, null=True, blank=True)
 
 
 class User(models.Model):
