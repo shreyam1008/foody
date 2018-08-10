@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from .models import User, Food, Restaurant, Preference\
+from .models import User, Food, Restaurant, Preference
     # , RateReview
 
 @csrf_exempt
