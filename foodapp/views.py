@@ -21,6 +21,16 @@ def user_reg(request):
     return HttpResponseRedirect("")
 
 
+def user_name(request, email):
+    user_name = User.objects.get(email=email).name
+
+    return JsonResponse(
+        {"email": email},
+        {"name": user_name}
+    )
+
+
+
 def restaurant_fill(res_list):
     for res in res_list:
         if not Restaurant.objects.filter(id = res.get('id')):
