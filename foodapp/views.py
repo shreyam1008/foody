@@ -205,7 +205,7 @@ def review_add(request):
 def review_get(request, rest_id):
 
     # get from database.create
-    data = RateReview.objects.filter(restaurant_id=rest_id)
+    data = RateReview.objects.filter(restaurant__id=rest_id)
 
 
     instance = []
