@@ -280,9 +280,8 @@ def chat(request):
         response = {
             "time": time_now,
             "receiver": data['sender'],
-            "message": bot_resp,
+            "message": str(bot_resp),
             "sender": Restaurant.objects.get(id = data['receiver']).name
-
         }
         return JsonResponse(response)
 
