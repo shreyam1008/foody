@@ -189,8 +189,7 @@ def review_add(request):
         data = request.POST
         print(data)
 
-
-        instance = RateReview.objects.create(restaurant_id=data['placeid'],
+        instance = RateReview.objects.create(restaurant__id=data['placeid'],
                                              email=data['email'],
                                              rating=data['rating'],
                                              comment=data['comment'],
