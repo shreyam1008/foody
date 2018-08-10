@@ -32,7 +32,7 @@
         <counts>
           <entry key="css" value="19" />
           <entry key="html" value="65" />
-          <entry key="py" value="9093" />
+          <entry key="py" value="9137" />
           <entry key="tools used" value="1" />
           <entry key="txt" value="21" />
         </counts>
@@ -43,7 +43,7 @@
           <entry key="DjangoUrlPath" value="2" />
           <entry key="HTML" value="65" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="9091" />
+          <entry key="Python" value="9135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -75,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foody/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+            <state relative-caret-position="330">
+              <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -87,11 +87,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foodapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+            <state relative-caret-position="298">
+              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <marker date="1533877917539" expanded="true" signature="678:904" ph="..." />
+                <marker date="1533878185118" expanded="true" signature="678:904" ph="..." />
               </folding>
             </state>
           </provider>
@@ -214,6 +214,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -483,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foody/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+        <state relative-caret-position="330">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -493,11 +494,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foodapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        <state relative-caret-position="298">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1533877917539" expanded="true" signature="678:904" ph="..." />
+            <marker date="1533878185118" expanded="true" signature="678:904" ph="..." />
           </folding>
         </state>
       </provider>
