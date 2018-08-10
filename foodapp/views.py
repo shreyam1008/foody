@@ -126,7 +126,7 @@ def res_edit(request):
         data = request.POST
         print(data)
 
-        instance = Restaurant.objects.get(id=data.resid)
+        instance = Restaurant.objects.get(id=data['placeid'])
         instance.bike_parking = data['bike_parking']
         instance.car_parking =  data['car_parking']
         instance.delivery = data['delivery']
