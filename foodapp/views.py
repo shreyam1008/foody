@@ -198,9 +198,12 @@ def chat(request):
                             "How can i be of your assistance senpei?"
                           ]
 
-        if data['message'] in greeet_list:
+        if data['message'].lower() in greet_list:
 
             response = random.choice(greet_response)
+
+        else:
+            response = "Sorry i am not smart emough to understand you yet ONNI CHAN"
 
 
 
