@@ -189,11 +189,81 @@ def res_recomm(request, email):
                          }
     )
 
+# @csrf_exempt
+# def chat(request):
+#     #for random resposne
+#     import random
+#     import time
+#
+#     if request.method =="GET":
+#         return JsonResponse({"hello there ": "general kenobi"})
+#     elif request.method == 'POST':
+#         data = request.POST
+#         print(data)
+#
+#         time_now = str(int(round(time.time() * 1000)))
+#         greet_list = ["hi", "hello", "hey"]
+#         greet_response = [
+#                             "Hey Food enthusist. Thanks for chooing BHoodie",
+#                             "I am BHAUJU. Your food ordering chatbot.",
+#                             "How can i be of your assistance senpei?"
+#                           ]
+#
+#         if data['message'].lower() in greet_list:
+#
+#             bot_resp = random.choice(greet_response)
+#
+#         else:
+#             bot_resp = "Sorry i am not smart enough to understand you yet ONNI CHAN"
+#
+#         #
+#         # {'time': ['09:30 PM'], 'receiver': ['ChIJofNoSV0Z6zkRRjem9lYXvQ4'], 'message': ['hi'],
+#         #  'sender': ['bcbcbc@gmail.com']}
+#         #  resp =
+#
+#         response = {
+#             "time": time_now,
+#             "receiver": data['sender'],
+#             "message": bot_resp,
+#             "sender": Restaurant.objects.get(id = data['receiver']).name
+#
+#         }
+#         return JsonResponse(response)
+#
+#
+#     return HttpResponseRedirect("")
+#
+
+#from chatterbot
 @csrf_exempt
 def chat(request):
-    #for random resposne
-    import random
+
     import time
+
+    from chatterbot.trainers import ListTrainer
+    from chatterbot import ChatBot
+
+    bot = ChatBot("test")
+
+    conversation = [
+        "Hello",
+        "Hi there!",
+        "How are you doing?",
+        "I'm doing great.",
+        "That is good to hear",
+        "Thank you.",
+        "You're welcome.",
+        "Thanks for chooing Bhoodie.",
+        "You are great.",
+        "Thank you very much",
+        "What is your name",
+        "I am BHAUJU. Your food ordering chatbot."
+
+    ]
+    bot.set_trainer(ListTrainer)
+    bot.train(conversation)
+
+
 
     if request.method =="GET":
         return JsonResponse({"hello there ": "general kenobi"})
@@ -201,26 +271,12 @@ def chat(request):
         data = request.POST
         print(data)
 
+
+
+
+        bot_resp = bot.get_response(data['message'])
+
         time_now = str(int(round(time.time() * 1000)))
-        greet_list = ["hi", "hello", "hey"]
-        greet_response = [
-                            "Hey Food enthusist. Thanks for chooing BHoodie",
-                            "I am BHAUJU. Your food ordering chatbot.",
-                            "How can i be of your assistance senpei?"
-                          ]
-
-        if data['message'].lower() in greet_list:
-
-            bot_resp = random.choice(greet_response)
-
-        else:
-            bot_resp = "Sorry i am not smart enough to understand you yet ONNI CHAN"
-
-        #
-        # {'time': ['09:30 PM'], 'receiver': ['ChIJofNoSV0Z6zkRRjem9lYXvQ4'], 'message': ['hi'],
-        #  'sender': ['bcbcbc@gmail.com']}
-        #  resp =
-
         response = {
             "time": time_now,
             "receiver": data['sender'],
@@ -232,7 +288,6 @@ def chat(request):
 
 
     return HttpResponseRedirect("")
-
 
 
 
