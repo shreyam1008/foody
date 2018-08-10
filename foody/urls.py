@@ -79,7 +79,7 @@ urlpatterns = [
     # path('chatbot/', include(chatbot_urls)),
 
     #this is for us chumps
-    path('chatbot/', chat) ,
+    # path('chatbot/', chat) ,
 
 
     #test
