@@ -141,6 +141,7 @@ def res_info(request, rest_id):
     # get from database.create
     x = Restaurant.objects.get(restaurant_id=rest_id)
 
+    response = {}
     if data:
         response = {
             "bike_parking": x.bike_parking,
