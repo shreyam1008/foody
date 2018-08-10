@@ -77,11 +77,17 @@ def pref_add(request):
         data = request.POST
         print(data)
 
-        x = Preference.objects.filter(user__email=data['email'])
+        x = Preference.objects.get(user__email=data['email'])
 
         #add update
-        # if x:
-        #     instance =
+        if x:
+            x.bike_parking = data['bike_parking']
+            x.car_parking = data['car_parking']
+            x.smoking = data['smoking']
+            x.vat = data['vat']
+            x.prange = data['prange']
+            x.delivery = data['delivery']
+            x.save()
 
         if not x:
             instance = Preference.objects.create(   user = data['email'],
@@ -142,7 +148,7 @@ def res_edit(request):
 
 def res_info(request, rest_id):
 
-    # get from database.create
+
     x = Restaurant.objects.get(id=rest_id)
     # x = Restaurant.objects.get()
 
