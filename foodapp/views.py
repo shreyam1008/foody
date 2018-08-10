@@ -214,9 +214,10 @@ def chat(request):
 
         response = {
             "time": time_now,
-            "receiver": data['sender'], #change later
+            "receiver": data['sender'],
             "message": bot_resp,
-            "sender": "Shreyam's Place"# change palter to rest name from pdetails
+            "sender": Restaurant.objects.get(id = data['receiver']).name
+
         }
         return JsonResponse(response)
 
