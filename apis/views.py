@@ -73,7 +73,7 @@ def get_reviews(reviews):
 def get_menu(res_id):
     # get from database.create
     data = Food.objects.filter(restaurant=res_id)
-    response = []
+    response = [{"name": "tea", "price": 20, "votes": 0}]
 
     if data:
         for x in data:
