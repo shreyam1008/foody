@@ -192,6 +192,7 @@ def chat(request):
         data = request.POST
         print(data)
 
+        time_now = str(int(round(time.time() * 1000)))
         greet_list = ["hi", "hello", "hey"]
         greet_response = [
                             "Hey Food enthusist. Thanks for chooing BHoodie",
@@ -201,17 +202,21 @@ def chat(request):
 
         if data['message'].lower() in greet_list:
 
-            response = random.choice(greet_response)
+            bot_resp = random.choice(greet_response)
 
         else:
-            response = "Sorry i am not smart emough to understand you yet ONNI CHAN"
+            bot_resp = "Sorry i am not smart enough to understand you yet ONNI CHAN"
 
         #
         # {'time': ['09:30 PM'], 'receiver': ['ChIJofNoSV0Z6zkRRjem9lYXvQ4'], 'message': ['hi'],
         #  'sender': ['bcbcbc@gmail.com']}
+        #  resp =
 
         response = {
-            "time": time.
+            "time": time_now,
+            "receiver": data['sender'], #change later
+            "message": bot_resp,
+            "sender": "Shreyam's Place"# change palter to rest name from pdetails
         }
         return JsonResponse(response)
 
