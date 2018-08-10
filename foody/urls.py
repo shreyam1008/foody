@@ -67,12 +67,12 @@ urlpatterns = [
     #when user thums up or down. PUT
     path('api/voting/', food_vote, name="food_vote"),
 
-
-    #POST review
-    path('api/review/', review_add, name='review_add'),
-    #GET review
-    path('api/review/id=<rest_id>/', review_get, name='review_get'),
-
+    #
+    # #POST review
+    # path('api/review/', review_add, name='review_add'),
+    # #GET review
+    # path('api/review/id=<rest_id>/', review_get, name='review_get'),
+    #
     path('chatbot/', include(chatbot_urls)),
 
     #test

@@ -52,13 +52,13 @@ class Food(models.Model):
     def __str__(self):
         return self.name
 
-class RateReview(models.Model):
-
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name="restua")
-    email = models.EmailField(blank=True)
-    rating = models.SmallIntegerField(blank=True, choices=RATING_CHOICES)
-    comment    = models.CharField(max_length=100, null=True, blank=True)
-
+# class RateReview(models.Model):
+#
+#     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name="restua")
+#     email = models.EmailField(blank=True)
+#     rating = models.SmallIntegerField(blank=True, choices=RATING_CHOICES)
+#     comment    = models.CharField(max_length=100, null=True, blank=True)
+#
 
 
 class User(models.Model):

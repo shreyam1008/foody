@@ -179,46 +179,45 @@ def res_recomm(request, email):
                          }
     )
 
-
-@csrf_exempt
-def review_add(request):
-
-    if request.method =="GET":
-        return JsonResponse({"hello there": "general kenobi"})
-    elif request.method == 'POST':
-        data = request.POST
-        print(data)
-
-        instance = RateReview.objects.create(restaurant__id=data['placeid'],
-                                             email=data['email'],
-                                             rating=data['rating'],
-                                             comment=data['comment'],
-                                             )
-        instance.save()
-
-
-        print("ok done")
-
-    return HttpResponseRedirect("")
-
-
-def review_get(request, rest_id):
-
-    # get from database.create
-    data = RateReview.objects.filter(restaurant__id=rest_id)
-
-
-    instance = []
-    for x in data:
-        if x:
-            instance.append(
-                {
-                    "email": x.email,
-                    "rating": x.rating,
-                    "comment" : x.comment
-                }
-            )
-
-    response = {"reviews": instance}
-
-    return JsonResponse(response)
+#
+# @csrf_exempt
+# def review_add(request):
+#
+#     if request.method =="GET":
+#         return JsonResponse({"hello there": "general kenobi"})
+#     elif request.method == 'POST':
+#         data = request.POST
+#         print(data)
+#
+#         instance = RateReview.objects.create(restaurant__id=data['placeid'],
+#                                              email=data['email'],
+#                                              rating=data['rating'],
+#                                              comment=data['comment'],
+#                                              )
+#         instance.save()
+#
+#         print("ok done")
+#
+#     return HttpResponseRedirect("")
+#
+#
+# def review_get(request, rest_id):
+#
+#     # get from database.create
+#     data = RateReview.objects.filter(restaurant__id=rest_id)
+#
+#
+#     instance = []
+#     for x in data:
+#         if x:
+#             instance.append(
+#                 {
+#                     "email": x.email,
+#                     "rating": x.rating,
+#                     "comment" : x.comment
+#                 }
+#             )
+#
+#     response = {"reviews": instance}
+#
+#     return JsonResponse(response)
