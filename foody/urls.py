@@ -13,7 +13,7 @@ from foods.views import food_list, food_detail, food_create
 from reviews.views import review_list, review_create
 from apis.views import places_list, place_detail
 
-from foodapp.views import user_reg, food_add, res_recomm, pref_add, pref_get, res_edit, food_vote, res_info
+from foodapp.views import user_reg, food_add, res_recomm, pref_add, pref_get, res_edit, food_vote, res_info, chat
     # , review_add, review_get
 
 from chatbot import urls as chatbot_urls
@@ -79,11 +79,11 @@ urlpatterns = [
     # path('chatbot/', include(chatbot_urls)),
 
     #this is for us chumps
-    # path('chatbot/', chat) ,
+    path('chatbot/', chat, name="chat"),
 
 
     #test
-    path('test/', test_func)
+    path('test/', test_func),
 ]
 
 # #old way 1.11

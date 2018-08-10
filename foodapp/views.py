@@ -180,6 +180,40 @@ def res_recomm(request, email):
                          }
     )
 
+
+def chat(request):
+    #for random resposne
+    import random
+
+    if request.method =="GET":
+        return JsonResponse({"hello there ": "general kenobi"})
+    elif request.method == 'POST':
+        data = request.POST
+        print(data)
+
+        greet_list = ["hi", "hello", "hey"]
+        greet_response = [
+                            "Hey Food enthusist. Thanks for chooing BHoodie",
+                            "I am BHAUJU. Your food ordering chatbot.",
+                            "How can i be of your assistance senpei?"
+                          ]
+
+        if data['message'] in greeet_list:
+
+            response = random.choice(greet_response)
+
+
+
+
+        return JsonResponse({"message": response})
+
+
+    return HttpResponseRedirect("")
+
+
+
+
+
 #
 # @csrf_exempt
 # def review_add(request):
