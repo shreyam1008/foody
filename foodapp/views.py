@@ -180,7 +180,7 @@ def res_recomm(request, email):
                          }
     )
 
-
+@csrf_exempt
 def chat(request):
     #for random resposne
     import random
