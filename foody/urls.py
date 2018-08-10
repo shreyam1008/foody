@@ -73,8 +73,14 @@ urlpatterns = [
     # path('api/review/', review_add, name='review_add'),
     # #GET review
     # path('api/review/id=<rest_id>/', review_get, name='review_get'),
-    #
-    path('chatbot/', include(chatbot_urls)),
+
+
+    #thi is for Gladys
+    # path('chatbot/', include(chatbot_urls)),
+
+    #this is for us chumps
+    path('chatbot/', chat) ,
+
 
     #test
     path('test/', test_func)

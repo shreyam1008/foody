@@ -83,7 +83,7 @@ def get_menu(res_id):
         return (response)
     else:
         return({"name": "tea", "price": 20, "votes": 0})
-    
+
 
 
 def place_detail(request, id):

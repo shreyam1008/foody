@@ -12,8 +12,13 @@ def test_func(request):
     elif request.method == 'POST':
         a = request.POST
         print(a)
+        import time
+        resp = str(int(round(time.time() * 1000)))
+
+
+
         return JsonResponse(
-            {"daku": "work"}
+            {"daku": resp}
         )
 
 
