@@ -47,7 +47,7 @@ urlpatterns = [
 
     #post apis
     path('api/newuser/', user_reg, name='user_reg'),
-    path('api/get_user/email=<email>', user_name, name='user_name'),
+    path('api/getuser/email=<email>/', user_name, name='user_name'),
 
     path('api/newfood/', food_add, name='food_add'),
 

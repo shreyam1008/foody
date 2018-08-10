@@ -22,11 +22,10 @@ def user_reg(request):
 
 
 def user_name(request, email):
-    user_name = User.objects.get(email=email).name
+    name = User.objects.get(email=email).name
 
     return JsonResponse(
-        {"email": email},
-        {"name": user_name}
+        {"email": email, "name": name}
     )
 
 
