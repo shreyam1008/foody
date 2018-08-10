@@ -184,6 +184,7 @@ def res_recomm(request, email):
 def chat(request):
     #for random resposne
     import random
+    import time
 
     if request.method =="GET":
         return JsonResponse({"hello there ": "general kenobi"})
@@ -205,10 +206,14 @@ def chat(request):
         else:
             response = "Sorry i am not smart emough to understand you yet ONNI CHAN"
 
+        #
+        # {'time': ['09:30 PM'], 'receiver': ['ChIJofNoSV0Z6zkRRjem9lYXvQ4'], 'message': ['hi'],
+        #  'sender': ['bcbcbc@gmail.com']}
 
-
-
-        return JsonResponse({"message": response})
+        response = {
+            "time": time.
+        }
+        return JsonResponse(response)
 
 
     return HttpResponseRedirect("")
