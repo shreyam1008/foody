@@ -81,6 +81,9 @@ def get_menu(res_id):
                 {"name": x.name, "price": x.price, "votes": x.votes}
             )
         return (response)
+    else:
+        return({"name": "tea", "price": 20, "votes": 0})
+    
 
 
 def place_detail(request, id):
