@@ -245,7 +245,6 @@ def chat(request):
     from chatterbot.trainers import ChatterBotCorpusTrainer
 
     bot = ChatBot("test")
-    bot.storage.drop()
     conversation = [
         "hi",
         "hello. How are you?",
