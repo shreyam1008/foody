@@ -254,7 +254,10 @@ def chat(request):
         "You are great.",
         "Thank you very much",
         "What is your name",
-        "I am BHAUJU. Your food ordering chatbot."
+        "I am BHAUJU. Your food ordering chatbot.",
+        "tell me something in japanese",
+        "Hello Onni Chan. I am here to serve you"
+
 
     ]
     # bot.set_trainer(ListTrainer)

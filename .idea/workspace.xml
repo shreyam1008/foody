@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI">
-      <change beforePath="$PROJECT_DIR$/foodapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foodapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="259" column="22" selection-start-line="259" selection-start-column="22" selection-end-line="260" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="258" column="5" lean-forward="true" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
                 <marker date="1534005564021" expanded="true" signature="685:806" ph="..." />
@@ -543,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foodapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="259" column="22" selection-start-line="259" selection-start-column="22" selection-end-line="260" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="258" column="5" lean-forward="true" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
             <marker date="1534005564021" expanded="true" signature="685:806" ph="..." />
