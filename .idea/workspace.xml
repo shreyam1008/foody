@@ -97,12 +97,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foodapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="290" column="29" lean-forward="true" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="259" column="22" selection-start-line="259" selection-start-column="22" selection-end-line="260" selection-end-column="25" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <marker date="1534005061008" expanded="true" signature="685:806" ph="..." />
-                <marker date="1534005061008" expanded="true" signature="836:1062" ph="..." />
+                <marker date="1534005564021" expanded="true" signature="685:806" ph="..." />
+                <marker date="1534005564021" expanded="true" signature="836:1062" ph="..." />
               </folding>
             </state>
           </provider>
@@ -543,12 +543,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foodapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="290" column="29" lean-forward="true" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+        <state relative-caret-position="105">
+          <caret line="259" column="22" selection-start-line="259" selection-start-column="22" selection-end-line="260" selection-end-column="25" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1534005061008" expanded="true" signature="685:806" ph="..." />
-            <marker date="1534005061008" expanded="true" signature="836:1062" ph="..." />
+            <marker date="1534005564021" expanded="true" signature="685:806" ph="..." />
+            <marker date="1534005564021" expanded="true" signature="836:1062" ph="..." />
           </folding>
         </state>
       </provider>
