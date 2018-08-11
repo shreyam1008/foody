@@ -257,8 +257,8 @@ def chat(request):
         "I am BHAUJU. Your food ordering chatbot."
 
     ]
-    # bot.set_trainer(ListTrainer)
-    # bot.train(conversation)#train from above list
+    bot.set_trainer(ListTrainer)
+    bot.train(conversation)#train from above list
     # bot.set_trainer(ChatterBotCorpusTrainer)
     # bot.train('chatterbot.corpus.english.greetings')
     # bot.train('chatterbot.corpus.english.food')
@@ -289,9 +289,9 @@ def chat(request):
         time_now = str(int(round(time.time() * 1000)))
         response = {
             "time": time_now,
-            "receiver": "receiver",#data['sender'],
+            "receiver": data['sender'],
             "message": str(bot_resp),
-            "sender": "sender" #Restaurant.objects.get(id = data['receiver']).name
+            "sender": "Restaurant.objects.get(id = data['receiver']).name
 
         }
         return JsonResponse(response)
