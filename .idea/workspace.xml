@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90178343-cdeb-4190-823b-2bef2ca8ae8c" name="Default" comment="added chatbot home UI">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -98,12 +97,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foodapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="283" column="23" lean-forward="true" selection-start-line="283" selection-start-column="23" selection-end-line="283" selection-end-column="23" />
+            <state relative-caret-position="240">
+              <caret line="259" column="21" selection-start-line="259" selection-start-column="21" selection-end-line="260" selection-end-column="20" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <marker date="1534000634959" expanded="true" signature="685:806" ph="..." />
-                <marker date="1534000634959" expanded="true" signature="836:1062" ph="..." />
+                <marker date="1534004365550" expanded="true" signature="685:806" ph="..." />
+                <marker date="1534004365550" expanded="true" signature="836:1062" ph="..." />
               </folding>
             </state>
           </provider>
@@ -508,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testview.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -542,14 +534,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/foody/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/foodapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="283" column="23" lean-forward="true" selection-start-line="283" selection-start-column="23" selection-end-line="283" selection-end-column="23" />
+        <state relative-caret-position="240">
+          <caret line="259" column="21" selection-start-line="259" selection-start-column="21" selection-end-line="260" selection-end-column="20" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1534000634959" expanded="true" signature="685:806" ph="..." />
-            <marker date="1534000634959" expanded="true" signature="836:1062" ph="..." />
+            <marker date="1534004365550" expanded="true" signature="685:806" ph="..." />
+            <marker date="1534004365550" expanded="true" signature="836:1062" ph="..." />
           </folding>
         </state>
       </provider>
