@@ -260,8 +260,8 @@ def chat(request):
 
 
     ]
-    # bot.set_trainer(ListTrainer)
-    # bot.train(conversation)#train from above list
+    bot.set_trainer(ListTrainer)
+    bot.train(conversation)#train from above list
     # bot.set_trainer(ChatterBotCorpusTrainer)
     # bot.train('chatterbot.corpus.english.greetings')
     # bot.train('chatterbot.corpus.english.food')
