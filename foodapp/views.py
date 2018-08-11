@@ -291,7 +291,7 @@ def chat(request):
             "time": time_now,
             "receiver": data['sender'],
             "message": str(bot_resp),
-            "sender": "Restaurant.objects.get(id = data['receiver']).name
+            "sender": Restaurant.objects.get(id = data['receiver']).name
 
         }
         return JsonResponse(response)
