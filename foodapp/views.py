@@ -242,16 +242,14 @@ def chat(request):
 
     from chatterbot.trainers import ListTrainer
     from chatterbot import ChatBot
+    from chatterbot.trainers import ChatterBotCorpusTrainer
 
     bot = ChatBot("test")
 
     conversation = [
-        "Hello",
-        "Hi there!",
-        "How are you doing?",
-        "I'm doing great.",
-        "That is good to hear",
-        "Thank you.",
+        "hi",
+        "hello. How are you?",
+        "I am fine. Thanks for asking."
         "You're welcome.",
         "Thanks for chooing Bhoodie.",
         "You are great.",
@@ -261,7 +259,19 @@ def chat(request):
 
     ]
     bot.set_trainer(ListTrainer)
-    bot.train(conversation)
+    bot.train(conversation)#train from above list
+    bot.set_trainer(ChatterBotCorpusTrainer)
+    bot.train('chatterbot.corpus.english.greeting')
+    bot.train('chatterbot.corpus.english.food')
+    bot.train('chatterbot.coprus.english.humor')
+
+
+
+
+
+
+
+
 
 
 
@@ -279,9 +289,9 @@ def chat(request):
         time_now = str(int(round(time.time() * 1000)))
         response = {
             "time": time_now,
-            "receiver": data['sender'],
+            "receiver": "receiver",#data['sender'],
             "message": str(bot_resp),
-            "sender": Restaurant.objects.get(id = data['receiver']).name
+            "sender": "sender" #Restaurant.objects.get(id = data['receiver']).name
         }
         return JsonResponse(response)
 
