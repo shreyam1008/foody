@@ -280,7 +280,8 @@ def chat(request):
         data = request.POST
         print(data)
 
-
+        location = data['userloc'].split(',')
+        print(location)
 
 
         bot_resp = bot.get_response(data['message'])
@@ -291,6 +292,7 @@ def chat(request):
             "receiver": "receiver",#data['sender'],
             "message": str(bot_resp),
             "sender": "sender" #Restaurant.objects.get(id = data['receiver']).name
+
         }
         return JsonResponse(response)
 
