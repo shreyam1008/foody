@@ -240,41 +240,27 @@ def chat(request):
 
     import time
 
-    from chatterbot.trainers import ListTrainer
     from chatterbot import ChatBot
+    from chatterbot.trainers import ListTrainer
     from chatterbot.trainers import ChatterBotCorpusTrainer
 
     bot = ChatBot("test")
     conversation = [
-        "hi",
-        "hello. How are you?",
-        "I am fine. Thanks for asking."
-        "You're welcome.",
+        "hello",
         "Thanks for chooing Bhoodie.",
         "You are great.",
         "Thank you very much",
-        "What is your name",
+        "What is your name?",
         "I am BHAUJU. Your food ordering chatbot.",
-        "tell me something in japanese",
+        "Tell me something in japanese",
         "Hello Onni Chan. I am here to serve you"
-
-
     ]
-    bot.set_trainer(ListTrainer)
-    bot.train(conversation)#train from above list
+    # bot.set_trainer(ListTrainer)
+    # bot.train(conversation)#train from above list
     # bot.set_trainer(ChatterBotCorpusTrainer)
     # bot.train('chatterbot.corpus.english.greetings')
     # bot.train('chatterbot.corpus.english.food')
     # bot.train('chatterbot.coprus.english.humor')
-
-
-
-
-
-
-
-
-
 
 
     if request.method =="GET":
@@ -285,9 +271,35 @@ def chat(request):
 
         location = data['userloc'].split(',')
         print(location)
+        data_type = data['type']
+        #
+        # #if general msg GM
+        # if data_type == "GM":
+        #     # check if GM matches any specific msg you want for specific actions
+        #     if data['message'].lower() == "restaurant name?":
+        #     # pdetails bring naem
+        #     if data['message'].lower() == "restaurant location?":
+        #     # pdetails bring address, http://maps.google.com/maps?daddr=27.689092,85.327423 bring location
+        #     if data['message'].lower() == "restaurant time?":
+        #     # pdetails bring opening hours
+        #     if data['message'].lower() == "is is open?":
+        #     # yes
+        #     # same for no, webisite, menus
+        #
+        #     # delivery
+        #     if data['message'].lower() == "order food?":
+        #     # pdetails show complete menu
+        #
+        # if data_type == "OM":
+        #     pass
+        #
+        # ####making trigger word condition
+        #
+
 
 
         bot_resp = bot.get_response(data['message'])
+        msg_type = "GM"
 
         time_now = str(int(round(time.time() * 1000)))
         response = {
@@ -295,6 +307,7 @@ def chat(request):
             "receiver": data['sender'],
             "message": str(bot_resp),
             "sender": Restaurant.objects.get(id = data['receiver']).name
+            "type": msg_type
 
         }
         return JsonResponse(response)
